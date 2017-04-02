@@ -537,7 +537,7 @@ inficiata la validazione rispetto agli schemi XSD.
 
 Per questo, risulta valido, ai fini del caricamento nel RNDT, il
 seguente tracciato XML:
-
+```xml
 **…**
 
 &lt;gmd:organisationName&gt;
@@ -548,9 +548,9 @@ sistema informativo territoriale&lt;/gco:CharacterString&gt;
 &lt;/gmd:organisationName&gt;
 
 **… ;**
-
+```
 mentre non è valido il tracciato seguente:
-
+```xml
 **…**
 
 &lt;gmd:organisationName&gt;
@@ -560,7 +560,7 @@ mentre non è valido il tracciato seguente:
 &lt;/gmd:organisationName&gt;
 
 **… .**
-
+```
 L’indicazione di cui sopra è valida anche per i metadati che hanno come
 dominio le liste di valori di cui al § 3.4.3 dell’allegato 2 al DM,
 sebbene esista, all’interno del tag, un attributo (*codeListValue*), il

@@ -122,9 +122,9 @@ XML, seguono i formati redazionali delle linee guida di cui sopra.
 I requisiti sono rappresentati nel modo seguente:
 
 ```
-<div style="background-color:#FA8072;">
-**<span style="color:red">Requisito n \#</span>**testo del requisito
-</div>
+\<div style="background-color:#FA8072;">
+\**<span style="color:red">Requisito n \#</span>**testo del requisito
+\</div>
 ```
 
 le raccomandazioni nel modo seguente:

@@ -108,7 +108,7 @@ nel RNDT, dei servizi relativi ai dati territoriali.
 Per quanto non specificato nel presente documento si rimanda alle linee
 guida INSPIRE di cui sopra.
 
-Note di lettura del documento
+## <a name=note-di-lettura-del-documento>Note di lettura del documento</a>
 
 Nella definizione dei requisiti, delle raccomandazioni e delle
 istruzioni nel presente documento sono utilizzate le forme verbali

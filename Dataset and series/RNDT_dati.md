@@ -122,7 +122,7 @@ XML, seguono i formati redazionali delle linee guida di cui sopra.
 I requisiti sono rappresentati nel modo seguente:
 
 ```
-**Requisito n \#** testo del requisito
+** Requisito n \# ** testo del requisito
 
 ```
 

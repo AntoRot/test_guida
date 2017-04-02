@@ -1,34 +1,24 @@
-![](media/image4.png){width="1.2284722222222222in"
-height="0.4270833333333333in"}
-
-**I contenuti del presente documento sono soggetti alla Licenza
-*Creative Commons Attribuzione - Condividi allo stesso modo 3.0
-Italia***[^1]
-
-***\
-***
 
 **INDICE**
 
-[*PREMESSA* 4](#premessa)
+[*PREMESSA*](#premessa)
 
-[*Note di lettura del documento* 5](#note-di-lettura-del-documento)
+[*Note di lettura del documento*](#note-di-lettura-del-documento)
 
-[*1* *COMPOSIZIONE DEI file XML* 6](#composizione-dei-file-xml)
+[*1* *COMPOSIZIONE DEI file XML*](#composizione-dei-file-xml)
 
-[*1.1* *Indicazioni generali* 6](#indicazioni-generali)
+[*1.1* *Indicazioni generali*](#indicazioni-generali)
 
-[*1.2* *Repository schemi XSD* 7](#repository-schemi-xsd)
+[*1.2* *Repository schemi XSD*](#repository-schemi-xsd)
 
-[*1.3* *Conformità* 7](#conformità)
+[*1.3* *Conformità*](#conformità)
 
 [*1.4* *Implementazione della struttura gerarchica e relazioni tra
-livelli*
-9](#implementazione-della-struttura-gerarchica-e-relazioni-tra-livelli)
+livelli*](#implementazione-della-struttura-gerarchica-e-relazioni-tra-livelli)
 
-[*2* *compilazione dei metadati* 12](#compilazione-dei-metadati)
+[*2* *compilazione dei metadati*](#compilazione-dei-metadati)
 
-[*2.1* *Istruzioni* 12](#istruzioni)
+[*2.1* *Istruzioni*](#istruzioni)
 
 [*2.2* *Mapping requisiti e raccomandazioni RNDT / INSPIRE*
 59](#mapping-requisiti-e-raccomandazioni-rndt-inspire)
@@ -51,20 +41,6 @@ livelli*
 [*B.2 Esempio di file XML per la serie*
 73](#b.2-esempio-di-file-xml-per-la-serie)
 
-![info.jpg](media/image5.jpeg){width="0.34375in" height="0.34375in"}
-**INFORMAZIONI**
-
-**Agenzia per l'Italia Digitale**
-
-Via Liszt, 21 – 00144 ROMA
-
-e-mail: [***info@rndt.gov.it***](mailto:rndt@digitpa.gov.it)
-
-portale web: [***http://www.rndt.gov.it***](http://www.rndt.gov.it)
-
-twitter: **@rndt\_it**
-
-contatto skype (solo per supporto alle PA): **rndt.help**
 
 PREMESSA  {#premessa .ListParagraph}
 =========

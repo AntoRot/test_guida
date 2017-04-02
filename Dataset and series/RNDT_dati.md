@@ -45,8 +45,8 @@ livelli*](#implementazione-della-struttura-gerarchica-e-relazioni-tra-livelli)
 ## <a name=premessa>PREMESSA</a>
 
 
-L’allegato 2 del [Decreto 10 novembre 2011](http://www.rndt.gov.it/RNDT/home/images/struttura/documenti/DM_RNDT.pdf) recante le regole tecniche del
-Repertorio Nazionale dei Dati Territoriali delinea, al § 3.1.1, la
+L’allegato 2 del [Decreto 10 novembre 2011](http://www.rndt.gov.it/RNDT/home/images/struttura/documenti/DM_RNDT.pdf) recante le _regole tecniche del
+Repertorio Nazionale dei Dati Territoriali_ delinea, al § 3.1.1, la
 struttura, mutuata dallo Standard ISO 19115, in cui possono essere
 organizzati i metadati.
 

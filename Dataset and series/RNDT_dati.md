@@ -120,11 +120,13 @@ Anche le notazioni di requisiti e raccomandazioni, così come gli esempi
 XML, seguono i formati redazionali delle linee guida di cui sopra.
 
 I requisiti sono rappresentati nel modo seguente:
+
+```
 <div style="background-color:#FA8072;">
-```
-**Requisito n \#**testo del requisito
-```
+**<span style="color:red">Requisito n \#</span>**testo del requisito
 </div>
+```
+
 le raccomandazioni nel modo seguente:
 
 **Raccomandazione n \#**testo della raccomandazione

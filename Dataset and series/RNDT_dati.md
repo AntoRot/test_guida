@@ -538,23 +538,20 @@ inficiata la validazione rispetto agli schemi XSD.
 Per questo, risulta valido, ai fini del caricamento nel RNDT, il
 seguente tracciato XML:
 ```xml
-**…**
 
 <gmd:organisationName>  
-  <gco:CharacterString>Regione Piemonte – Settore cartografia e sistema informativo territoriale</gco:CharacterString>  
+  <gco:CharacterString>Regione Piemonte – Settore cartografia   
+  e sistema informativo territoriale</gco:CharacterString>  
 </gmd:organisationName>
 
-**…**
 ```
 mentre non è valido il tracciato seguente:
 ```xml
-**…**
 
 <gmd:organisationName>  
   <gco:CharacterString></gco:CharacterString>  
 </gmd:organisationName>
 
-**… .**
 ```
 L’indicazione di cui sopra è valida anche per i metadati che hanno come
 dominio le liste di valori di cui al § 3.4.3 dell’allegato 2 al DM,

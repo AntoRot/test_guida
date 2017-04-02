@@ -42,8 +42,8 @@ livelli*](#implementazione-della-struttura-gerarchica-e-relazioni-tra-livelli)
 73](#b.2-esempio-di-file-xml-per-la-serie)
 
 
-PREMESSA  {#premessa .ListParagraph}
-=========
+## <a name=premessa>PREMESSA</a>
+
 
 L’allegato 2 del DM 10 novembre 2011[^2] recante le regole tecniche del
 Repertorio Nazionale dei Dati Territoriali delinea, al § 3.1.1, la

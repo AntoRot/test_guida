@@ -93,7 +93,7 @@ il RNDT contempla un livello informativo in più, la sezione (tile).
 Risulta evidente, quindi, l’esigenza di fornire delle indicazioni più
 dettagliate per l’implementazione del modello concettuale dei metadati,
 delineato nell’allegato 2, al fine di garantire la conformità al
-Regolamento INSPIRE di cui sopra e alle relative [Linee Guida Tecniche](http://inspire.jrc.ec.europa.eu/documents/Metadata/MD_IR_and_ISO_20131029.pdf) edite dal Joint
+Regolamento INSPIRE di cui sopra e alle relative [Linee Guida Tecniche][linee-guida-inspire] edite dal Joint
 Research Centre della Commissione Europea.
 
 Il presente documento rappresenta la parte generale di tale
@@ -108,11 +108,13 @@ nel RNDT, dei servizi relativi ai dati territoriali.
 Per quanto non specificato nel presente documento si rimanda alle linee
 guida INSPIRE di cui sopra.
 
+[linee-guida-inspire]:http://inspire.jrc.ec.europa.eu/documents/Metadata/MD_IR_and_ISO_20131029.pdf
+
 ## <a name=note-di-lettura-del-documento>Note di lettura del documento</a>
 
 Nella definizione dei requisiti, delle raccomandazioni e delle
 istruzioni nel presente documento sono utilizzate le forme verbali
-analoghe alle linee guida INSPIRE (v. nota 3).
+analoghe alle [linee guida INSPIRE][linee-guida-inspire].
 
 Anche le notazioni di requisiti e raccomandazioni, così come gli esempi
 XML, seguono i formati redazionali delle linee guida di cui sopra.

@@ -45,7 +45,7 @@ livelli*](#implementazione-della-struttura-gerarchica-e-relazioni-tra-livelli)
 ## <a name=premessa>PREMESSA</a>
 
 
-L’allegato 2 del DM 10 novembre 2011[^2] recante le regole tecniche del
+L’allegato 2 del [Decreto 10 novembre 2011](http://www.rndt.gov.it/RNDT/home/images/struttura/documenti/DM_RNDT.pdf) recante le regole tecniche del
 Repertorio Nazionale dei Dati Territoriali delinea, al § 3.1.1, la
 struttura, mutuata dallo Standard ISO 19115, in cui possono essere
 organizzati i metadati.
@@ -84,8 +84,8 @@ fornire o a cui si può accedere ovvero di attenersi all’elemento minimo
 che ha senso descrivere, che può anche non coincidere con l’elemento
 minimo di fornitura, se esiste.
 
-Il Regolamento (CE) n. 1205/2008, recante attuazione della direttiva
-INSPIRE (Direttiva 2007/2/CE) per quanto riguarda i metadati, ha
+Il [Regolamento (CE) n. 1205/2008](http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2008:326:0012:0030:IT:PDF), recante attuazione della [direttiva
+INSPIRE (Direttiva 2007/2/CE)](http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2007:108:0001:0014:IT:PDF) per quanto riguarda i metadati, ha
 individuato come campi di applicazione dei metadati i dataset, le serie
 e i servizi. Si evince, quindi, che, rispetto alle norme europee citate,
 il RNDT contempla un livello informativo in più, la sezione (tile).
@@ -93,8 +93,8 @@ il RNDT contempla un livello informativo in più, la sezione (tile).
 Risulta evidente, quindi, l’esigenza di fornire delle indicazioni più
 dettagliate per l’implementazione del modello concettuale dei metadati,
 delineato nell’allegato 2, al fine di garantire la conformità al
-Regolamento INSPIRE e alle relative Linee Guida Tecniche edite dal Joint
-Research Centre della Commissione Europea[^3].
+Regolamento INSPIRE di cui sopra e alle relative [Linee Guida Tecniche](http://inspire.jrc.ec.europa.eu/documents/Metadata/MD_IR_and_ISO_20131029.pdf) edite dal Joint
+Research Centre della Commissione Europea.
 
 Il presente documento rappresenta la parte generale di tale
 implementazione, valida, pertanto, per tutte le tipologie di dati,
@@ -106,7 +106,7 @@ Inoltre, sarà predisposto un documento specifico per la documentazione,
 nel RNDT, dei servizi relativi ai dati territoriali.
 
 Per quanto non specificato nel presente documento si rimanda alle linee
-guida INSPIRE di cui sopra (v. nota 3).
+guida INSPIRE di cui sopra.
 
 Note di lettura del documento {#note-di-lettura-del-documento .ListParagraph}
 =============================

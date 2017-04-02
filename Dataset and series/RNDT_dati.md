@@ -540,24 +540,24 @@ seguente tracciato XML:
 ```xml
 **…**
 
-&lt;gmd:organisationName&gt;
+<gmd:organisationName>
 
-&lt;gco:CharacterString&gt;Regione Piemonte – Settore cartografia e
-sistema informativo territoriale&lt;/gco:CharacterString&gt;
+<gco:CharacterString>Regione Piemonte – Settore cartografia e
+sistema informativo territoriale</gco:CharacterString>
 
-&lt;/gmd:organisationName&gt;
+</gmd:organisationName>
 
-**… ;**
+**…**
 ```
 mentre non è valido il tracciato seguente:
 ```xml
 **…**
 
-&lt;gmd:organisationName&gt;
+<gmd:organisationName>
 
-> &lt;gco:CharacterString&gt;&lt;/gco:CharacterString&gt;
+<gco:CharacterString> </gco:CharacterString>
 
-&lt;/gmd:organisationName&gt;
+</gmd:organisationName>
 
 **… .**
 ```

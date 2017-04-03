@@ -647,27 +647,27 @@ dove:
 <td>Istruzioni di implementazione</td>
 <td>L’elenco di codici per le 24 lingue ufficiali della UE, da utilizzare per valorizzare l’elemento, è il seguente (codelist basata sui codici a tre lettere di ISO 639-2/B come definita all’indirizzo [*http://www.loc.gov/standards/iso639-2/*](http://www.loc.gov/standards/iso639-2/)):
 
-Danese – dan
-Estone – est
-Finlandese – fin
-Francese – fre
-Greco – gre
-Inglese – eng
-Irlandese – gle
-Italiano – ita
-Lettone – lav
-Lituano – lit
-Maltese – mlt
-Olandese – dut
-Polacco – pol
-Portoghese – por
-Rumeno – rum
-Slovacco – slo
-Sloveno – slv
-Spagnolo – spa
-Svedese - swe
-Tedesco – ger
-Ungherese – hun
+Danese – dan  
+Estone – est  
+Finlandese – fin  
+Francese – fre  
+Greco – gre  
+Inglese – eng  
+Irlandese – gle  
+Italiano – ita  
+Lettone – lav  
+Lituano – lit  
+Maltese – mlt  
+Olandese – dut  
+Polacco – pol  
+Portoghese – por  
+Rumeno – rum  
+Slovacco – slo  
+Sloveno – slv  
+Spagnolo – spa  
+Svedese - swe  
+Tedesco – ger  
+Ungherese – hun  
 
 La lingua di default per i metadati del RNDT è, ovviamente, l’italiano (ita).
                                       
@@ -677,7 +677,7 @@ La lista di tutti i codici (compresi quelli delle lingue regionali) è disponibi
 </table>
 
   
->**Requisito 3** 
+>**REQUISITO 3** 
 
 ```
 L'elemento è opzionale per ISO 19115, ma è obbligatorio per il RNDT in base al DM 10/11/2011 e al Regolamento 1205/2008/CE.

@@ -560,13 +560,15 @@ e sulle Linee Guida Tecniche INSPIRE.
 
 #####  Identificatore del file
 
-  **Nome elemento** | **Identificatore del file**
+  **Nome elemento** | <span style="align:left">**Identificatore del file**</span>
   ------------------|----------------------------
   **Riferimento** | All.2 DM – tab. I-1
   **Molteplicità**  | \[1\]
   **Elemento INSPIRE** | Nessun elemento corrispondente
   **Definizione** | Identificatore univoco del file dei metadati.
   **Istruzioni di implementazione** | Testo libero.
+  
+  
 
 >**REQUISITO 1** 
 ```

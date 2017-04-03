@@ -5,7 +5,7 @@
 
 [*Note di lettura del documento*](#note-di-lettura-del-documento)
 
-[*1* *COMPOSIZIONE DEI file XML*](#composizione-dei-file-xml)
+[*1* *COMPOSIZIONE DEI FILE XML*](#composizione-dei-file-xml)
 
 [*1.1* *Indicazioni generali*](#indicazioni-generali)
 
@@ -338,16 +338,12 @@ garantisce la conformità al “*core*” di ISO 19115.
   Frequenza di aggiornamento (Op) | -
   
 
-### Tab. 1 – Mapping metadati RNDT – metadati core ISO 19115 {#tab.-1-mapping-metadati-rndt-metadati-core-iso-19115 .ListParagraph}
 
   #### RNDT vs INSPIRE
 
 La corrispondenza tra i metadati previsti dal Repertorio e i metadati di
 cui al Regolamento (CE) 1205/2008 è riportata al § 3.4.8.1 dell’allegato
-2 al DM.
-
-Inoltre, per ogni elemento riportato nel successivo capitolo 2, viene
-anche indicato, se esistente, il corrispondente elemento INSPIRE.
+2 al [Decreto RNDT][decreto_RNDT].
 
 Anche in questo caso, i metadati INSPIRE risultano essere un
 sottoinsieme dei metadati del Repertorio; pertanto, la conformità ad
@@ -358,10 +354,9 @@ In più, nel caso di incongruenza tra INSPIRE e ISO, è stata recepita
 l’indicazione dello Standard ISO, che, comunque, non è in contrasto con
 quella indicata da INSPIRE, essendo, quest’ultima, meno vincolante.
 
-Implementazione della struttura gerarchica e relazioni tra livelli
-------------------------------------------------------------------
+### <a name=implementazione-della-struttura-gerarchica-e-relazioni-tra-livelli>Implementazione della struttura gerarchica e relazioni tra livelli</a>
 
-### Gerarchia e relazioni serie/dataset/sezione
+#### Gerarchia e relazioni serie/dataset/sezione
 
 Come indicato nella premessa, il Regolamento (CE) relativo ai metadati
 contempla, per quanto riguarda i dati territoriali, solo i livelli di
@@ -390,7 +385,7 @@ se serie e dataset documentati sono documentati in file distinti, il
 RNDT ricostruisce, attraverso gli identificatori, le relazioni, se
 esistenti, tra i diversi livelli.
 
-Come prescritto al § 4.3.2.1 dell'allegato 2 al DM, infatti, sono
+Come prescritto al § 4.3.2.1 dell'allegato 2 al [Decreto RNDT][decreto_RNDT], infatti, sono
 previste due coppie di identificatori utili a gestire, rispettivamente,
 le trasmissioni dei file XML al RNDT e le relazioni tra i livelli
 gerarchici individuati.
@@ -444,12 +439,15 @@ al caso 2).
 Quanto allo schema XSD di riferimento, per il caso 4) devono essere
 utilizzati gli schemi RNDT.
 
-**Raccomandazione 1** Considerate le indicazioni fornite nelle linee
+>**Raccomandazione 1** 
+```
+Considerate le indicazioni fornite nelle linee
 guida INSPIRE, si raccomanda di documentare i metadati utilizzando un
 file per ogni livello gerarchico (serie e/o dataset), secondo quanto
 riportato nei casi 1) e 2) di cui sopra.
+```
 
-### Relazioni dati/servizi
+#### Relazioni dati/servizi
 
 Per quanto riguarda le relazioni tra dati e servizi, nel set di metadati
 individuato dal RNDT sono presenti alcuni elementi che consentono di
@@ -463,37 +461,15 @@ A livello di metadati dei dati, invece, l’elemento “*Risorsa on-line*”
 può essere utilizzato per indicare l’URL degli eventuali servizi
 disponibili sui dati (v., a tale proposito le indicazioni al § 2.1.7.3).
 
-### Nella figura 1 sono rappresentate le relazioni tra i vari livelli in cui è possibile descrivere i metadati dei dati territoriali e relativi servizi. {#nella-figura-1-sono-rappresentate-le-relazioni-tra-i-vari-livelli-in-cui-è-possibile-descrivere-i-metadati-dei-dati-territoriali-e-relativi-servizi. .ListParagraph}
 
-![](media/image6.png){width="2.4520833333333334in"
-height="2.2916666666666665in"}
+## <a name=compilazione-dei-metadati>COMPILAZIONE DEI METADATI</a>
 
-  ###  {#section-3 .ListParagraph}        ### RNDT {#rndt .ListParagraph}
-  --------------------------------------- -----------------------------------------------------------
-  ### md dati {#md-dati .ListParagraph}   ### metadati serie {#metadati-serie .ListParagraph}
-  ###  {#section .ListParagraph}          ### metadati dataset {#metadati-dataset .ListParagraph}
-  ###  {#section-1 .ListParagraph}        ### metadati sezione {#metadati-sezione .ListParagraph}
-  ###  {#section-2 .ListParagraph}        ### metadati servizio {#metadati-servizio .ListParagraph}
-
-### \
- {#section-4 .ListParagraph}
-
-###  {#section-5 .ListParagraph}
-
-###  {#section-6 .ListParagraph}
-
-### Fig. 1 – Relazioni tra i vari livelli del RNDT {#fig.-1-relazioni-tra-i-vari-livelli-del-rndt .ListParagraph}
-
-compilazione dei metadati
-=========================
-
-Nel presente capitolo vengono definite le istruzioni utili per la
-compilazione dei metadati previsti dall’allegato 2 del DM, in coerenza
+Di seguito vengono definite le istruzioni utili per la
+compilazione dei metadati previsti dall’allegato 2 del [Decreto RNDT][decreto_RNDT], in coerenza
 con quanto disposto dal Regolamento CE n. 1205/2008 e dalle relative
 Linee Guida Tecniche.
 
-Istruzioni
-----------
+### <a name=istruzioni>Istruzioni</a>
 
 L’indicazione generale, valida per tutti i metadati definiti, è che,
 all’interno del file XML, il tag corrispondente a ciascun elemento deve
@@ -535,48 +511,46 @@ presenti in corrispondenza di ciascun elemento.
 
 Pertanto, si ritiene valido il tracciato XML seguente:
 
-**…**
+```xml
 
-&lt;gmd:role&gt;
+<gmd:role>
+<gmd:CI\_RoleCode codeListValue="pointOfContact"
+codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO\_19139\_Schemas/resources/codelist/gmxCodelists.xml\#CI\_RoleCode">punto
+di contatto</gmd:CI\_RoleCode>
+</gmd:role>
 
-&lt;gmd:CI\_RoleCode codeListValue="pointOfContact"
-codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO\_19139\_Schemas/resources/codelist/gmxCodelists.xml\#CI\_RoleCode"&gt;punto
-di contatto&lt;/gmd:CI\_RoleCode&gt;
-
-&lt;/gmd:role&gt;
-
-**…**
+```
 
 oppure
 
-**…**
+```xml
 
-&lt;gmd:role&gt;
+<gmd:role>
+<gmd:CI\_RoleCode codeListValue="pointOfContact"
+codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO\_19139\_Schemas/resources/codelist/gmxCodelists.xml\#CI\_RoleCode">pointOfContact</gmd:CI\_RoleCode>
+</gmd:role>
 
-&lt;gmd:CI\_RoleCode codeListValue="pointOfContact"
-codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO\_19139\_Schemas/resources/codelist/gmxCodelists.xml\#CI\_RoleCode"&gt;pointOfContact&lt;/gmd:CI\_RoleCode&gt;
+```
 
-&lt;/gmd:role&gt;
-
-**…** .
-
-**Raccomandazione 2 Da preferire la modalità rappresentata nel primo
+**Raccomandazione 2 **
+```
+Da preferire la modalità rappresentata nel primo
 esempio di tracciato XML che esprime il valore del tag nella lingua
 dichiarata per i metadati (italiano). Nel caso delle enumerazioni il
 valore va espresso, invece, in linguaggio neutrale.**
+```
 
 Non è valido, invece, il tracciato seguente:
 
-**…**
+```xml
 
-&lt;gmd:role&gt;
+<gmd:role>
 
-&lt;gmd:CI\_RoleCode codeListValue="pointOfContact"
-codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO\_19139\_Schemas/resources/codelist/gmxCodelists.xml\#CI\_RoleCode"/&gt;
+<gmd:CI\_RoleCode codeListValue="pointOfContact"
+codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO\_19139\_Schemas/resources/codelist/gmxCodelists.xml\#CI\_RoleCode"/>
+</gmd:role>
 
-&lt;/gmd:role&gt;
-
-**…**
+```
 
 Ciò premesso, di seguito, per ogni elemento, vengono forniti l’elemento
 INSPIRE corrispondente, le istruzioni di implementazione e un esempio di

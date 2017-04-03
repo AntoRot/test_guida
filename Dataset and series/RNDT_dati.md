@@ -228,12 +228,14 @@ disponibili in due repository:
 In entrambi i repository indicati, la versione del GML di riferimento è
 la 3.2.1 il cui namespace è  
 >[*http://www.opengis.net/gml/3.2*](http://www.opengis.net/gml/3.2).  
-Il
-RNDT non valida file XML con versioni GML diverse da quella indicata.
+
+Il RNDT non valida file XML con versioni GML diverse da quella indicata.
 
 Pertanto, per validare i file XML nel RNDT utilizzare lo schema  
 >[*http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO\_19139\_Schemas/gmd/gmd.xsd*](http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/gmd/gmd.xsd)  
-oppure  
+
+oppure
+
 >[*http://schemas.opengis.net/iso/19139/20070417/gmd/gmd.xsd*](http://schemas.opengis.net/iso/19139/20070417/gmd/gmd.xsd).
 
   #### Schemi XSD RNDT

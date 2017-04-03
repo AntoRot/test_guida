@@ -45,7 +45,7 @@ livelli*](#implementazione-della-struttura-gerarchica-e-relazioni-tra-livelli)
 ## <a name=premessa>PREMESSA</a>
 
 
-L’allegato 2 del [Decreto 10 novembre 2011][decreto_RNDT] recante le _regole tecniche del
+L’allegato 2 del [Decreto 10 novembre 2011][decreto_RNDT] (di seguito _Decreto RNDT_) recante le _regole tecniche del
 Repertorio Nazionale dei Dati Territoriali_ delinea, al § 3.1.1, la
 struttura, mutuata dallo Standard ISO 19115, in cui possono essere
 organizzati i metadati.
@@ -159,7 +159,7 @@ testo del requisito
 
  ### <a name=indicazioni-generali>Indicazioni generali</a>
 
-Come stabilito nell’allegato 2 al citato DM, l’alimentazione e
+Come stabilito nell’allegato 2 al citato [Decreto RNDT][decreto_RNDT], l’alimentazione e
 l’aggiornamento del RNDT avviene attraverso la trasmissione di file XML.
 
 Gli schemi XSD di riferimento indicati sono quelli ‘*adattati’* a
@@ -193,22 +193,22 @@ serie-dataset-sezione. In questo caso, il portale del RNDT, in virtù di
 quanto sancito al comma 1 dell’art. 4 del DM, fornisce un adeguato
 servizio di conversione verso i formati standard.
 
-Il DM, sempre nell’allegato 2, contempla anche, per l’alimentazione del
+Il [Decreto RNDT][decreto_RNDT], sempre nell’allegato 2, contempla anche, per l’alimentazione del
 Repertorio, la possibilità di utilizzare gli schemi ISO di cui al citato
 Standard ISO TS 19139.
 
 Sulla base di ciò, pertanto, qualora i set di metadati vengano
 documentati utilizzando i livelli serie-dataset o semplicemente il
 dataset e/o la serie in livelli flat indipendenti (come indicato nelle
-linee guida INSPIRE), allora si possono comunque utilizzare gli schemi
+[linee guida INSPIRE][linee-guida-inspire]), allora si possono comunque utilizzare gli schemi
 XSD ISO, tenendo presente che, in questo caso, è necessario rispettare i
 requisiti di obbligatorietà dei metadati stabiliti nel citato allegato
-2. Ciò garantirà la piena conformità, oltre all’interoperabilità, con
+\2. Ciò garantirà la piena conformità, oltre all’interoperabilità, con
 gli Standard ISO di riferimento e le regole tecniche INSPIRE (v. anche
-il successivo § 1.2).
+il paragrafo [Repository schemi XSD](#repository-schemi-xsd)).
 
 Considerato, quindi, l’obiettivo indicato in premessa, nel presente
-documento si farà riferimento esclusivamente agli schemi XSD ISO.
+documento si **farà riferimento esclusivamente agli schemi XSD ISO**.
 
  ### <a name=repository-schemi-xsd>Repository schemi XSD</a>
 
@@ -226,14 +226,15 @@ disponibili in due repository:
    > [*http://schemas.opengis.net/iso/19139/20070417/*](http://schemas.opengis.net/iso/19139/20070417/).
 
 In entrambi i repository indicati, la versione del GML di riferimento è
-la 3.2.1 il cui namespace è
-[*http://www.opengis.net/gml/3.2*](http://www.opengis.net/gml/3.2) . Il
+la 3.2.1 il cui namespace è  
+>[*http://www.opengis.net/gml/3.2*](http://www.opengis.net/gml/3.2).  
+Il
 RNDT non valida file XML con versioni GML diverse da quella indicata.
 
-Pertanto, per validare i file XML nel RNDT utilizzare lo schema
-[*http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO\_19139\_Schemas/gmd/gmd.xsd*](http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/gmd/gmd.xsd)
-oppure
-[*http://schemas.opengis.net/iso/19139/20070417/gmd/gmd.xsd*](http://schemas.opengis.net/iso/19139/20070417/gmd/gmd.xsd).
+Pertanto, per validare i file XML nel RNDT utilizzare lo schema  
+>[*http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO\_19139\_Schemas/gmd/gmd.xsd*](http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/gmd/gmd.xsd)  
+oppure  
+>[*http://schemas.opengis.net/iso/19139/20070417/gmd/gmd.xsd*](http://schemas.opengis.net/iso/19139/20070417/gmd/gmd.xsd).
 
   #### Schemi XSD RNDT
 

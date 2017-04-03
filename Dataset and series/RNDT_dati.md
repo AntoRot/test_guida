@@ -222,6 +222,8 @@ disponibili in due repository:
 >
 > [*http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO\_19139\_Schemas/*](http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/);
 
+oppure
+
   > 2)  repository OGC all’indirizzo
    > [*http://schemas.opengis.net/iso/19139/20070417/*](http://schemas.opengis.net/iso/19139/20070417/).
 
@@ -241,7 +243,7 @@ oppure
   #### Schemi XSD RNDT
 
 Gli schemi *adattati* del RNDT sono disponibili sul portale del
-Repertorio stesso nella sezione “*Documenti*”; essi includono tutti i
+Repertorio stesso nella sezione [***Documenti***](http://www.rndt.gov.it/RNDT/home/index.php?option=com_content&view=article&id=54&Itemid=222); essi includono tutti i
 namespace degli schemi XSD ISO di cui al paragrafo precedente. Gli
 adattamenti rispetto a tali ultimi schemi sono inseriti nel namespace
 *ITgmd*.
@@ -250,9 +252,16 @@ adattamenti rispetto a tali ultimi schemi sono inseriti nel namespace
 
  #### RNDT vs ISO
 
-Nella tabella 1 è riportata la corrispondenza tra i metadati previsti
+Nella seguente tabella è riportata la corrispondenza tra i metadati previsti
 dal profilo del RNDT e quelli previsti dal *core set* dello Standard ISO
-19115:2003 (tabella 3, § 6.5)[^5]. Accanto ad ogni elemento è indicato,
+19115:2003 (tabella 3, § 6.5).
+
+**Nota**
+```
+Nella nuova versione dello Standard (ISO 19115-1:2014 Geographic Information - Metadata - Part 1: Fundamentals) il concetto di core metadata è stato rimosso. Come indicato, nel presente documento si fa riferimento all'edizione 2003 dello Standard ISO.
+```
+
+Accanto ad ogni elemento è indicato,
 tra parentesi, il livello di obbligatorietà (***O*** per obbligatorio,
 ***Op*** per opzionale, ***C*** per condizionato).
 
@@ -271,11 +280,11 @@ Viceversa, la conformità di un set di metadati al profilo del RNDT
 garantisce la conformità al “*core*” di ISO 19115.
 
   ---------------------------------------------------------------------------------------
-  **Metadati RNDT**
+  **Metadati RNDT** | **Core ISO 19115**
   --------------------------------------- -----------------------------------------------
   **Informazioni sui metadati**
 
-  Identificatore del file (O)
+  Identificatore del file (O) | Metadata file identifier (Op)
 
   Lingua dei metadati (O)
 

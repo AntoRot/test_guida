@@ -558,9 +558,9 @@ e sulle Linee Guida Tecniche INSPIRE.
 
 #### Informazioni sui metadati
 
-#####  Identificatore del file
+#####  `Identificatore del file`
 
-  **Nome elemento** | <span style="align:left">**Identificatore del file**</span>
+                    | 
   ------------------|----------------------------
   **Riferimento** | All.2 DM – tab. I-1
   **Molteplicità**  | \[1\]

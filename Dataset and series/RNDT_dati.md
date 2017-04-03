@@ -560,7 +560,7 @@ e sulle Linee Guida Tecniche INSPIRE.
 
 #####  `Identificatore del file`
 
-                    | 
+  |  
   ------------------|----------------------------
   **Riferimento** | All.2 DM – tab. I-1
   **Molteplicità**  | \[1\]
@@ -590,11 +590,14 @@ iPA e la restante parte dell’identificatore è “:” (due punti).
 
 ```
 
-**Raccomandazione 3** Il formato consigliato è il seguente:
+>**_RACCOMANDAZIONE 3_** 
+```
+Il formato consigliato è il seguente:
 ***iPA**:cod-Ente:aaaammgg:hhmmss* dove: *iPA* è il codice IPA;
 *cod-Ente* è un codice interno a discrezione dell’Amministrazione che
 può essere anche un progressivo; *aaaammgg* è la data corrente
 (anno-mese-giorno); *hhmmss* è l’orario corrente (ore-minuti-secondi).
+```
 
 **Esempio di XML:**
 

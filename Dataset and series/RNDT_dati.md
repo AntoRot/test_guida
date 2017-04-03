@@ -150,7 +150,10 @@ indicazioni tratte dalle linee guida INSPIRE e ne rappresenta la
 traduzione o un adattamento, allora tale evenienza viene indicata con
 uno sfondo grigio come nel modo seguente:
 
-**Requisito n \#**testo del requisito
+><span style="text-color:red">**Requisito n \#**</span>
+```
+testo del requisito
+```
 
 ## <a name=composizione-dei-file-xml>COMPOSIZIONE DEI FILE XML</a>
 

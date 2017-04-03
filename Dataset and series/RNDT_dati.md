@@ -439,7 +439,7 @@ al caso 2).
 Quanto allo schema XSD di riferimento, per il caso 4) devono essere
 utilizzati gli schemi RNDT.
 
->**_RACCOMANDAZIONE 1_** 
+   >**_RACCOMANDAZIONE 1_** 
 ```
 Considerate le indicazioni fornite nelle linee
 guida INSPIRE, si raccomanda di documentare i metadati utilizzando un
@@ -532,7 +532,7 @@ codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO\_19139\_S
 
 ```
 
->**_RACCOMANDAZIONE 2_**
+   >**_RACCOMANDAZIONE 2_**
 ```
 Da preferire la modalità rappresentata nel primo esempio di tracciato XML che esprime il valore del tag 
 nella lingua dichiarata per i metadati (italiano). Nel caso delle enumerazioni il valore va espresso,
@@ -560,7 +560,7 @@ e sulle Linee Guida Tecniche INSPIRE.
 
 #####  `Identificatore del file`
 
-  Nome | id
+   | 
   ----------------|-----------------
   **Riferimento** | All.2 DM – tab. I-1
   **Molteplicità**  | \[1\]
@@ -570,7 +570,7 @@ e sulle Linee Guida Tecniche INSPIRE.
   
   
 
->**REQUISITO 1** 
+   >**REQUISITO 1** 
 ```
 
 L'elemento è opzionale per ISO 19115, ma è obbligatorio
@@ -578,7 +578,7 @@ per il RNDT in base al DM 10/11/2011.
 
 ```
 
->**REQUISITO 2** 
+   >**REQUISITO 2** 
 ```
 
 L'elemento deve contenere, come prefisso, il codice
@@ -590,7 +590,7 @@ iPA e la restante parte dell’identificatore è “:” (due punti).
 
 ```
 
->**_RACCOMANDAZIONE 3_** 
+   >**_RACCOMANDAZIONE 3_** 
 ```
 Il formato consigliato è il seguente:
 ***iPA**:cod-Ente:aaaammgg:hhmmss* dove: *iPA* è il codice IPA;

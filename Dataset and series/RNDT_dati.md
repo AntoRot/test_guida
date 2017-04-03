@@ -256,9 +256,11 @@ Nella seguente tabella è riportata la corrispondenza tra i metadati previsti
 dal profilo del RNDT e quelli previsti dal *core set* dello Standard ISO
 19115:2003 (tabella 3, § 6.5).
 
-**Nota**
+>**Nota**
 ```
-Nella nuova versione dello Standard (ISO 19115-1:2014 Geographic Information - Metadata - Part 1: Fundamentals) il concetto di core metadata è stato rimosso. Come indicato, nel presente documento si fa riferimento all'edizione 2003 dello Standard ISO.
+Nella nuova versione dello Standard (ISO 19115-1:2014 Geographic Information - Metadata
+- Part 1: Fundamentals) il concetto di core metadata è stato rimosso. Come indicato, 
+nel presente documento si fa riferimento all'edizione 2003 dello Standard ISO.
 ```
 
 Accanto ad ogni elemento è indicato,
@@ -279,18 +281,14 @@ anche quei metadati obbligatori nel Repertorio ma non previsti nel
 Viceversa, la conformità di un set di metadati al profilo del RNDT
 garantisce la conformità al “*core*” di ISO 19115.
 
-  ---------------------------------------------------------------------------------------
-  **Metadati RNDT** | **Core ISO 19115**
-  --------------------------------------- -----------------------------------------------
+ 
+  **Metadati RNDT**           | **Core ISO 19115**
+  --------------------------- | -----------------------------
   **Informazioni sui metadati**
-
   Identificatore del file (O) | Metadata file identifier (Op)
-
-  Lingua dei metadati (O)
-
-  Set dei caratteri dei metadati (C)
-
-  Id file precedente (O)
+  Lingua dei metadati (O) | Metadata  language (C)
+  Set dei caratteri dei metadati (C) | Metadata character set (C)
+  Id file precedente (O) | -
 
   Livello gerarchico (O)
 

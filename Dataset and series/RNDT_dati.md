@@ -560,7 +560,7 @@ e sulle Linee Guida Tecniche INSPIRE.
 
 #####  `Identificatore del file`
 
-  []() |    
+  []() | 
   ----------------|-----------------
   **Riferimento** | All.2 DM – tab. I-1
   **Molteplicità**  | \[1\]

@@ -215,12 +215,12 @@ Ai fini della validazione dei file XML nel RNDT, gli schemi XSD
 ufficiali relativi agli Standard ISO a cui fare riferimento sono
 disponibili in due repository:
 
-   1)  repository ISO per gli standard pubblici all’indirizzo
-
+>   1)  repository ISO per gli standard pubblici all’indirizzo
+>
 > [*http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO\_19139\_Schemas/*](http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/);
 
-   2)  repository OGC all’indirizzo
-    [*http://schemas.opengis.net/iso/19139/20070417/*](http://schemas.opengis.net/iso/19139/20070417/).
+  > 2)  repository OGC all’indirizzo
+   > [*http://schemas.opengis.net/iso/19139/20070417/*](http://schemas.opengis.net/iso/19139/20070417/).
 
 In entrambi i repository indicati, la versione del GML di riferimento è
 la 3.2.1 il cui namespace è

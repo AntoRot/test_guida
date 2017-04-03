@@ -439,7 +439,7 @@ al caso 2).
 Quanto allo schema XSD di riferimento, per il caso 4) devono essere
 utilizzati gli schemi RNDT.
 
-   >**_RACCOMANDAZIONE 1_** 
+    >**_RACCOMANDAZIONE 1_** 
 ```
 Considerate le indicazioni fornite nelle linee
 guida INSPIRE, si raccomanda di documentare i metadati utilizzando un

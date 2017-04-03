@@ -289,101 +289,54 @@ garantisce la conformità al “*core*” di ISO 19115.
   Lingua dei metadati (O) | Metadata  language (C)
   Set dei caratteri dei metadati (C) | Metadata character set (C)
   Id file precedente (O) | -
-
-  Livello gerarchico (O)
-
-  Responsabile dei metadati (O)
-
-  Data dei metadati (O)
-
-  Nome dello Standard (O)
-
-  Versione dello Standard (O)
-
+  Livello gerarchico (O) | -
+  Responsabile dei metadati (O) | Metadata point of contact (O)
+  Data dei metadati (O) | Metadata date stamp (O)
+  Nome dello Standard (O) | Metadata standard name (Op)
+  Versione dello Standard (O) | Metadata standard version (Op)
   **Identificazione dei dati**
-
-  Titolo (O)
-
-  Data (O)
-  
-  Tipo data (O)
-
-  Formato di presentazione (O)
-
-  Responsabile (O)
-
-  Identificatore (O)
-
-  Id livello superiore (O)
-
-  Altri dettagli (Op)
-
-  Descrizione (O)
-
-  Parola chiave (O)
-  
-  Thesaurus (Op)
-
-  Punto di contatto (O)
-
-  Tipo di rappresentazione spaziale (O)
-
-  Risoluzione spaziale (O)
-
-  Lingua (O)
-
-  Set di caratteri (C)
-
-  Categoria tematica (O)
-
-  Informazioni supplementari (Op)
-
+  Titolo (O) | Dataset title (O)
+  Data (O)   Tipo data (O) | Dataset reference date (O)
+  Formato di presentazione (O) | -
+  Responsabile (O) | -
+  Identificatore (O) | -
+  Id livello superiore (O) | -
+  Altri dettagli (Op) | -
+  Descrizione (O) | Abstract describing the dataset (O)
+  Parola chiave (O)   Thesaurus (Op) | -
+  Punto di contatto (O) | Dataset responsible party (Op)
+  Tipo di rappresentazione spaziale (O) | Spatial representation type (Op)
+  Risoluzione spaziale (O) | Spatial resolution of the dataset (Op)
+  Lingua (O) | Dataset language (O)
+  Set di caratteri (C) | Dataset character set (C)
+  Categoria tematica (O) | Dataset topic category (O)
+  Informazioni supplementari (Op) | 
   **Vincoli sui dati**
-
-  Limitazione d’uso (O)
-
-  Vincoli di accesso (O)
-
-  Vincoli di fruibilità (O)
-
-  Altri vincoli (C)
-
-  Vincoli di sicurezza (O)
-
+  Limitazione d’uso (O) | -
+  Vincoli di accesso (O) | -
+  Vincoli di fruibilità (O) | -
+  Altri vincoli (C) | -
+  Vincoli di sicurezza (O) | -
   **Estensione dei dati**
-
-  Localizzazione geografica (O)
-
-  Estensione verticale (Op)
-
-  Estensione temporale (Op)
-
+  Localizzazione geografica (O) | Geographic location of  the dataset (C)
+  Estensione verticale (Op) | Additional extent information for the dataset
+(vertical) (Op)
+  Estensione temporale (Op) | Additional extent information for the dataset
+(temporal) (Op)
   **Qualità dei dati**
-
-  Livello di qualità (O)
-
-  Accuratezza posizionale (O)
-
-  Genealogia (O)
-
-  Conformità: specifiche (C)
-
-  Conformità: grado (C)
-
+  Livello di qualità (O) | -
+  Accuratezza posizionale (O) | -
+  Genealogia (O) | Lineage (Op)
+  Conformità: specifiche (C) | -
+  Conformità: grado (C) | -
   **Sistema di riferimento**
-
-  Sistema di riferimento spaziale (O)
-
-  Formato di distribuzione (O)
-
-  Distributore (O)
-
-  Risorsa on line (Op)
-
+  Sistema di riferimento spaziale (O) | Reference system (Op)
+  Formato di distribuzione (O) | Distribution format (Op)
+  Distributore (O) | -
+  Risorsa on line (Op) | On-line resource (Op)
   **Gestione dei dati**
-
-  Frequenza di aggiornamento (Op)
-  ---------------------------------------------------------------------------------------
+  Frequenza di aggiornamento (Op) | -
+  
 
 ### Tab. 1 – Mapping metadati RNDT – metadati core ISO 19115 {#tab.-1-mapping-metadati-rndt-metadati-core-iso-19115 .ListParagraph}
 

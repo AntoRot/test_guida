@@ -581,6 +581,8 @@ e sulle Linee Guida Tecniche INSPIRE.
 <td>Istruzioni di implementazione</td>
 <td>Testo libero</td>
 </tr>
+</table>
+
    | 
   ----------------|-----------------
   **Riferimento** | All.2 DM – tab. I-1

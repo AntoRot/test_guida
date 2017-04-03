@@ -439,7 +439,7 @@ al caso 2).
 Quanto allo schema XSD di riferimento, per il caso 4) devono essere
 utilizzati gli schemi RNDT.
 
->**Raccomandazione 1** 
+>**_RACCOMANDAZIONE 1_** 
 ```
 Considerate le indicazioni fornite nelle linee
 guida INSPIRE, si raccomanda di documentare i metadati utilizzando un
@@ -532,7 +532,7 @@ codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO\_19139\_S
 
 ```
 
->**Raccomandazione 2 **
+>**_RACCOMANDAZIONE 2_**
 ```
 Da preferire la modalità rappresentata nel primo esempio di tracciato XML che esprime il valore del tag 
 nella lingua dichiarata per i metadati (italiano). Nel caso delle enumerazioni il valore va espresso,
@@ -544,9 +544,9 @@ Non è valido, invece, il tracciato seguente:
 ```xml
 
 <gmd:role>
-
 <gmd:CI\_RoleCode codeListValue="pointOfContact"
-codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO\_19139\_Schemas/resources/codelist/gmxCodelists.xml\#CI\_RoleCode"/>
+codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO\_19139\_Schemas/resources/
+codelist/gmxCodelists.xml\#CI\_RoleCode"/>
 </gmd:role>
 
 ```
@@ -556,27 +556,36 @@ INSPIRE corrispondente, le istruzioni di implementazione e un esempio di
 tracciato XML, basato sugli schemi XSD di cui allo Standard ISO TS 19139
 e sulle Linee Guida Tecniche INSPIRE.
 
-### Informazioni sui metadati
+#### Informazioni sui metadati
 
-####  Identificatore del file
+#####  Identificatore del file
 
-  **Nome elemento**                   **Identificatore del file**
-  ----------------------------------- -----------------------------------------------
-  **Riferimento**                     All.2 DM – tab. I-1
-  **Molteplicità**                    \[1\]
-  **Elemento INSPIRE**                Nessun elemento corrispondente
-  **Definizione**                     Identificatore univoco del file dei metadati.
-  **Istruzioni di implementazione**   > Testo libero.
+  **Nome elemento** | **Identificatore del file**
+  **Riferimento** | All.2 DM – tab. I-1
+  **Molteplicità**  | \[1\]
+  **Elemento INSPIRE** | Nessun elemento corrispondente
+  **Definizione** | Identificatore univoco del file dei metadati.
+  **Istruzioni di implementazione** | Testo libero.
 
-**Requisito 1** L'elemento è opzionale per ISO 19115, ma è obbligatorio
+>**REQUISITO 1** 
+```
+
+L'elemento è opzionale per ISO 19115, ma è obbligatorio
 per il RNDT in base al DM 10/11/2011.
 
-**Requisito 2** L'elemento deve contenere, come prefisso, il **codice
-iPA** assegnato all’Amministrazione nel momento dell’accreditamento
+```
+
+>**REQUISITO 2** 
+```
+
+L'elemento deve contenere, come prefisso, il codice
+iPA assegnato all’Amministrazione nel momento dell’accreditamento
 all'Indice delle Pubbliche Amministrazioni come da comma 1 dell’art. 19
 dell’allegato A del DPCM 1 aprile 2008. La condizione imprescindibile è
 che l’identificativo debba essere univoco. Il separatore tra il codice
-iPA e la restante parte dell’identificatore è “**:**” (due punti).
+iPA e la restante parte dell’identificatore è “:” (due punti).
+
+```
 
 **Raccomandazione 3** Il formato consigliato è il seguente:
 ***iPA**:cod-Ente:aaaammgg:hhmmss* dove: *iPA* è il codice IPA;

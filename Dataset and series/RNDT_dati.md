@@ -439,7 +439,7 @@ al caso 2).
 Quanto allo schema XSD di riferimento, per il caso 4) devono essere
 utilizzati gli schemi RNDT.
 
-    >**_RACCOMANDAZIONE 1_** 
+   >**_RACCOMANDAZIONE 1_** 
 ```
 Considerate le indicazioni fornite nelle linee
 guida INSPIRE, si raccomanda di documentare i metadati utilizzando un
@@ -560,6 +560,27 @@ e sulle Linee Guida Tecniche INSPIRE.
 
 #####  `Identificatore del file`
 
+<table>
+<tr>
+<td>Riferimento</td>
+<td>All.2 Decreto RNDT – tab. I-1</td>
+</tr>
+<tr>
+<td>Molteplicità</td>
+<td>[1]</td>
+</tr>
+<tr>
+<td>Elemento INSPIRE</td>
+<td>Nessun elemento corrispondente</td>
+</tr>
+<tr>
+<td>Definizione</td>
+<td>Identificatore univoco del file dei metadati.</td>
+</tr>
+<tr>
+<td>Istruzioni di implementazione</td>
+<td>Testo libero</td>
+</tr>
    | 
   ----------------|-----------------
   **Riferimento** | All.2 DM – tab. I-1

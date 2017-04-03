@@ -532,12 +532,11 @@ codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO\_19139\_S
 
 ```
 
-**Raccomandazione 2 **
+>**Raccomandazione 2 **
 ```
-Da preferire la modalità rappresentata nel primo
-esempio di tracciato XML che esprime il valore del tag nella lingua
-dichiarata per i metadati (italiano). Nel caso delle enumerazioni il
-valore va espresso, invece, in linguaggio neutrale.**
+Da preferire la modalità rappresentata nel primo esempio di tracciato XML che esprime il valore del tag 
+nella lingua dichiarata per i metadati (italiano). Nel caso delle enumerazioni il valore va espresso,
+invece, in linguaggio neutrale.
 ```
 
 Non è valido, invece, il tracciato seguente:

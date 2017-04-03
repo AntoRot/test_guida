@@ -583,32 +583,19 @@ e sulle Linee Guida Tecniche INSPIRE.
 </tr>
 </table>
 
-   | 
-  ----------------|-----------------
-  **Riferimento** | All.2 DM – tab. I-1
-  **Molteplicità**  | \[1\]
-  **Elemento INSPIRE** | Nessun elemento corrispondente
-  **Definizione** | Identificatore univoco del file dei metadati.
-  **Istruzioni di implementazione** | Testo libero.
-  
-  
-
    >**REQUISITO 1** 
 ```
 
-L'elemento è opzionale per ISO 19115, ma è obbligatorio
-per il RNDT in base al DM 10/11/2011.
+L'elemento è opzionale per ISO 19115, ma è obbligatorio per il RNDT in base al DM 10/11/2011.
 
 ```
 
    >**REQUISITO 2** 
 ```
 
-L'elemento deve contenere, come prefisso, il codice
-iPA assegnato all’Amministrazione nel momento dell’accreditamento
-all'Indice delle Pubbliche Amministrazioni come da comma 1 dell’art. 19
-dell’allegato A del DPCM 1 aprile 2008. La condizione imprescindibile è
-che l’identificativo debba essere univoco. Il separatore tra il codice
+L'elemento deve contenere, come prefisso, il codice iPA assegnato all’Amministrazione nel momento dell’accreditamento
+all'Indice delle Pubbliche Amministrazioni come da comma 1 dell’art. 19 dell’allegato A del DPCM 1 aprile 2008. 
+La condizione imprescindibile è che l’identificativo debba essere univoco. Il separatore tra il codice
 iPA e la restante parte dell’identificatore è “:” (due punti).
 
 ```
@@ -616,26 +603,27 @@ iPA e la restante parte dell’identificatore è “:” (due punti).
    >**_RACCOMANDAZIONE 3_** 
 ```
 Il formato consigliato è il seguente:
-***iPA**:cod-Ente:aaaammgg:hhmmss* dove: *iPA* è il codice IPA;
-*cod-Ente* è un codice interno a discrezione dell’Amministrazione che
-può essere anche un progressivo; *aaaammgg* è la data corrente
-(anno-mese-giorno); *hhmmss* è l’orario corrente (ore-minuti-secondi).
+***iPA**:cod-Ente:aaaammgg:hhmmss* 
+dove: 
+*iPA* è il codice IPA; 
+*cod-Ente* è un codice interno a discrezione dell’Amministrazione che può essere anche un progressivo; 
+*aaaammgg* è la data corrente (anno-mese-giorno); 
+*hhmmss* è l’orario corrente (ore-minuti-secondi).
 ```
 
-**Esempio di XML:**
+>**Esempio di XML**
 
-&lt;gmd:MD\_Metadata&gt;
+```xml 
+<gmd:MD\_Metadata>
+ <gmd:fileIdentifier>
+  <gco:CharacterString>r_campan:000002:20090220:111239</gco:CharacterString>
+ </gmd:fileIdentifier>
+ 
+<...></...>
 
-&lt;gmd:fileIdentifier&gt;
+</gmd:MD\_Metadata>
 
-&lt;gco:CharacterString&gt;r\_campan:000002:20090220:111239&lt;/gco:CharacterString&gt;
-
-&lt;/gmd:fileIdentifier&gt;
-
-**…**
-
-&lt;/gmd:MD\_Metadata&gt;
-
+```
 #### Lingua dei metadati
 
   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

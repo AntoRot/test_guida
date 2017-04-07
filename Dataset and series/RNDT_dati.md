@@ -1051,237 +1051,353 @@ codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO\_19139\_S
 
 #### Data dei metadati
 
-  **Nome elemento**                   **Data dei metadati**
-  ----------------------------------- ------------------------------------------------------
-  **Riferimento**                     All.2 DM – tab. I-7
-  **Molteplicità**                    \[1\]
-  **Elemento INSPIRE**                Data dei metadati
-  **Definizione**                     Data di creazione o di ultima modifica dei metadati.
-  **Istruzioni di implementazione**   Formato ISO 8601.
+<table>
+<tr>
+<td>Riferimento</td>
+<td>All.2 Decreto RNDT – tab. I-7</td>
+</tr>
+<tr>
+<td>Molteplicità</td>
+<td>\[1\]</td>
+</tr>
+<tr>
+<td>Elemento INSPIRE</td>
+<td>Data dei metadati</td>
+</tr>
+<tr>
+<td>Definizione</td>
+<td>Data di creazione o di ultima modifica dei metadati.</td>
+</tr>
+<tr>
+<td>Istruzioni di implementazione</td>
+<td>Formato ISO 8601.</td>
+</tr>
+</table>
 
-**Requisito 11** La data deve essere espressa conformemente allo
+
+>**REQUISITO 11** 
+
+```
+La data deve essere espressa conformemente allo
 Standard ISO 8601: *aaaa-mm-gg* oppure *aaaammgg*, dove *aaaa* è l'anno,
 *mm* il mese, gg il giorno.
 
-**Esempio di XML:**
+```
 
-&lt;gmd:MD\_Metadata&gt;
+>**Esempio di XML:**
 
-**…**
+```xml
 
-&lt;gmd:dateStamp&gt;
+<gmd:MD\_Metadata>
 
-&lt;gco:Date&gt;2009-02-23&lt;/gco:Date&gt;
+<...></...>
 
-&lt;/gmd:dateStamp&gt;
+<gmd:dateStamp>
+<gco:Date>2009-02-23</gco:Date>
+</gmd:dateStamp>
 
-**…**
+<...></...>
 
-&lt;gmd:MD\_Metadata&gt;
+<gmd:MD\_Metadata>
+
+```
 
 #### Nome dello Standard
 
-  **Nome elemento**                   **Nome dello Standard**
-  ----------------------------------- -------------------------------------------------------------
-  **Riferimento**                     All.2 DM – tab. I-8
-  **Molteplicità**                    \[1\]
-  **Elemento INSPIRE**                Nessun elemento corrispondente
-  **Definizione**                     Nome dello standard e/o del profilo di metadati utilizzato.
-  **Istruzioni di implementazione**   Testo libero.
+<table>
+<tr>
+<td>Riferimento</td>
+<td>All.2 Decreto RNDT – tab. I-8</td>
+</tr>
+<tr>
+<td>Molteplicità</td>
+<td>\[1\]</td>
+</tr>
+<tr>
+<td>Elemento INSPIRE</td>
+<td>Nessun elemento corrispondente</td>
+</tr>
+<tr>
+<td>Definizione</td>
+<td>Nome dello standard e/o del profilo di metadati utilizzato.</td>
+</tr>
+<tr>
+<td>Istruzioni di implementazione</td>
+<td>Testo libero.</td>
+</tr>
+</table>
 
-**Requisito 12** Fare riferimento al DM e relativi allegati che
+
+>**REQUISITO 12** 
+
+```
+Fare riferimento al DM e relativi allegati che
 regolamentano il funzionamento del RNDT. Il valore che deve essere
 inserito è “*DM - Regole tecniche RNDT*”.
 
-**Esempio di XML:**
+```
 
-&lt;gmd:MD\_Metadata&gt;
+>**Esempio di XML:**
 
-**…**
+```xml
+<gmd:MD\_Metadata>
 
-&lt;gmd:metadataStandardName&gt;
+<...></...>
 
-&lt;gco:CharacterString&gt;DM - Regole tecniche
-RNDT&lt;/gco:CharacterString&gt;
+<gmd:metadataStandardName>
 
-&lt;/gmd:metadataStandardName&gt;
+<gco:CharacterString>DM - Regole tecniche
+RNDT</gco:CharacterString>
 
-**…**
+</gmd:metadataStandardName>
 
-&lt;/gmd:MD\_Metadata&gt;
+<...></...>
+
+</gmd:MD\_Metadata>
+
+```
 
 #### Versione dello Standard
 
-  **Nome elemento**                   **Versione dello Standard**
-  ----------------------------------- ---------------------------------------------------------
-  **Riferimento**                     All.2 DM – tab. I-9
-  **Molteplicità**                    \[1\]
-  **Elemento INSPIRE**                Nessun elemento corrispondente
-  **Definizione**                     Versione dello standard/profilo di metadati utilizzato.
-  **Istruzioni di implementazione**   Testo libero.
+<table>
+<tr>
+<td>Riferimento</td>
+<td>All.2 Decreto RNDT – tab. I-9</td>
+</tr>
+<tr>
+<td>Molteplicità</td>
+<td>\[1\]</td>
+</tr>
+<tr>
+<td>Elemento INSPIRE</td>
+<td>Nessun elemento corrispondente</td>
+</tr>
+<tr>
+<td>Definizione</td>
+<td>Versione dello standard/profilo di metadati utilizzato.</td>
+</tr>
+<tr>
+<td>Istruzioni di implementazione</td>
+<td>Testo libero.</td>
+</tr>
+</table>
 
-**Requisito 13** Fare riferimento al DM e relativi allegati che
+
+>**REQUISITO 13** 
+
+```
+Fare riferimento al DM e relativi allegati che
 regolamentano il funzionamento del RNDT. Il valore che deve essere
 inserito è “*10 novembre 2011*”.
 
-**Esempio di XML:**
+```
 
-&lt;gmd:MD\_Metadata&gt;
+>**Esempio di XML:**
 
-**…**
 
-&lt;gmd:metadataStandardVersion&gt;
+```xml
 
-&lt;gco:CharacterString&gt;10 novembre 2011&lt;/gco:CharacterString&gt;
+<gmd:MD\_Metadata>
 
-&lt;/gmd:metadataStandardVersion&gt;
+<...></...>
 
-**…**
+<gmd:metadataStandardVersion>
+<gco:CharacterString>10 novembre 2011</gco:CharacterString>
+</gmd:metadataStandardVersion>
 
-&lt;/gmd:MD\_Metadata&gt;
+<...></...>
+
+</gmd:MD\_Metadata>
+
+```
 
 ### Identificazione dei dati
 
 #### Titolo
 
-  **Nome elemento**                   **Titolo**
-  ----------------------------------- --------------------------------------------------------------------------
-  **Riferimento**                     All.2 DM – tab. I-10
-  **Molteplicità**                    \[1\]
-  **Elemento INSPIRE**                Titolo della risorsa
-  **Definizione**                     Nome caratteristico e spesso unico con il quale la risorsa è conosciuta.
-  **Istruzioni di implementazione**   Testo libero.
+<table>
+<tr>
+<td>Riferimento</td>
+<td>All.2 Decreto RNDT – tab. I-10</td>
+</tr>
+<tr>
+<td>Molteplicità</td>
+<td>\[1\]</td>
+</tr>
+<tr>
+<td>Elemento INSPIRE</td>
+<td>Titolo della risorsa</td>
+</tr>
+<tr>
+<td>Definizione</td>
+<td>Nome caratteristico e spesso unico con il quale la risorsa è conosciuta.</td>
+</tr>
+<tr>
+<td>Istruzioni di implementazione</td>
+<td>Testo libero.</td>
+</tr>
+</table>
 
-**Raccomandazione 6** Il titolo deve essere conciso e puntuale. Esso non
+
+>**_Raccomandazione 6_** 
+
+```
+Il titolo deve essere conciso e puntuale. Esso non
 dovrebbe contenere acronimi o abbreviazioni incomprensibili. Si
 consiglia una lunghezza massima di 250 caratteri, riportando il "nome
 ufficiale" della risorsa.
 
-**Raccomandazione 7** Se i dati documentati sono parte di un progetto
+```
+
+>**_Raccomandazione 7_** 
+
+```
+Se i dati documentati sono parte di un progetto
 più ampio, si consiglia di indicare, tra parentesi, il progetto alla
 fine del titolo. Nel caso dei nomi dei progetti, sono consentite anche
 le abbreviazioni, purchè il resto del titolo segua la raccomandazione di
 cui sopra e l'abbreviazione sia spiegata nella descrizione della
 risorsa.
 
-**Esempio di XML:**
+```
 
-&lt;gmd:MD\_Metadata&gt;
+>**Esempio di XML:**
 
-**…**
 
-&lt;gmd:identificationInfo&gt;
+```xml
 
-&lt;gmd:MD\_DataIdentification&gt;
+<gmd:MD\_Metadata>
 
-&lt;gmd:citation&gt;
+<...></...>
 
-&lt;gmd:CI\_Citation&gt;
+<gmd:identificationInfo>
+<gmd:MD\_DataIdentification>
+<gmd:citation>
+<gmd:CI\_Citation>
+<gmd:title>
+<gco:CharacterString>Database Topografico della Regione
+Puglia</gco:CharacterString>
+</gmd:title>
+</gmd:CI\_Citation>
+</gmd:citation>
+</gmd:MD\_DataIdentification>
+</gmd:identificationInfo>
 
-&lt;gmd:title&gt;
+<...></...>
 
-&lt;gco:CharacterString&gt;Database Topografico della Regione
-Puglia&lt;/gco:CharacterString&gt;
+</gmd:MD\_Metadata>
 
-&lt;/gmd:title&gt;
-
-&lt;/gmd:CI\_Citation&gt;
-
-&lt;/gmd:citation&gt;
-
-&lt;/gmd:MD\_DataIdentification&gt;
-
-&lt;/gmd:identificationInfo&gt;
-
-**…**
-
-&lt;/gmd:MD\_Metadata&gt;
+```
 
 #### Data
 
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **Nome elemento**                   **Data**
-  ----------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------
-  **Riferimento**                     All.2 DM – tab. I-11 (I-11.1 – I-11.2)
 
-  **Molteplicità**                    \[1..\*\]
+<table>
+<tr>
+<td>Riferimento</td>
+<td>All.2 Decreto RNDT – tab. I-11 (I-11.1 – I-11.2)</td>
+</tr>
+<tr>
+<td>Molteplicità</td>
+<td>\[1..\*\]</td>
+</tr>
+<tr>
+<td>Elemento INSPIRE</td>
+<td>A seconda del tipo di data specificato, può corrispondere a “Data di pubblicazione”, “Data dell’ultima revisione” o “Data di creazione”.</td>
+</tr>
+<tr>
+<td>Definizione</td>
+<td>Data di riferimento dei dati.</td>
+</tr>
+<tr>
+<td>Istruzioni di implementazione</td>
+<td>  - **Data** \[1\] - formato ISO 8601
+      - **Tipo data** \[1\] – L’elemento deve assumere uno dei valori della lista “*CI\_DateTypeCode*” (§ 3.4.3.1 - all. 2 DM).</td>
+</tr>
+</table>
 
-  **Elemento INSPIRE**                A seconda del tipo di data specificato, può corrispondere a “Data di pubblicazione”, “Data dell’ultima revisione” o “Data di creazione”.
 
-  **Definizione**                     Data di riferimento dei dati.
+>**REQUISITO 14** 
 
-  **Istruzioni di implementazione**   -   **Data** \[1\] - formato ISO 8601
-                                      
-                                      -   **Tipo data** \[1\] – L’elemento deve assumere uno dei valori della lista “*CI\_DateTypeCode*” (§ 3.4.3.1 - all. 2 DM).
-                                      
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-**Requisito 14** Il Regolamento 1205/2008/CE richiede l'indicazione di
+```
+Il Regolamento 1205/2008/CE richiede l'indicazione di
 un riferimento temporale scelto tra *estensione temporale* e *data* (che
 può essere quella di *creazione* o di *pubblicazione* o di *revisione*).
 Il DM (conformemente a ISO 19115) prescrive l'obbligo di indicare almeno
 una tra i tre tipi di data di cui sopra, mentre l'estensione temporale è
 opzionale.
 
-**Raccomandazione 8** Riportare almeno la data dell'ultima revisione dei
+```
+
+>**_Raccomandazione 8_** 
+
+```
+Riportare almeno la data dell'ultima revisione dei
 dati documentati.
 
-**Requisito 15** Il sistema di riferimento temporale di default deve
+```
+
+>**REQUISITO 15** 
+
+```
+Il sistema di riferimento temporale di default deve
 essere il calendario Gregoriano con la data espressa conformemente allo
 Standard ISO 8601: *aaaa-mm-gg* oppure *aaaammgg*, dove *aaaa* è l'anno,
 *mm* il mese, gg il giorno.
 
-**Requisito 16** Nel caso venga indicata la data di creazione dei dati,
+```
+
+>**REQUISITO 16** 
+
+```
+Nel caso venga indicata la data di creazione dei dati,
 questa deve essere una sola.
 
-**Esempio di XML:**
+```
 
-&lt;gmd:MD\_Metadata&gt;
+>**Esempio di XML:**
 
-**…**
 
-&lt;gmd:identificationInfo&gt;
+```xml
 
-&lt;gmd:MD\_DataIdentification&gt;
+<gmd:MD\_Metadata>
 
-&lt;gmd:citation&gt;
+<...></...>
 
-&lt;gmd:CI\_Citation&gt;
+<gmd:identificationInfo>
+<gmd:MD\_DataIdentification>
+<gmd:citation>
+<gmd:CI\_Citation>
 
-**…**
+<...></...>
 
-&lt;gmd:date&gt;
+<gmd:date>
+<gmd:CI\_Date>
+<gmd:date>
+<gco:Date>1998-10-01</gco:Date>
+</gmd:date>
+<gmd:dateType>
+<gmd:CI\_DateTypeCode codeListValue="creation"
+codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO\_19139\_Schemas/resources/codelist/gmxCodelists.xml\#CI\_DateTypeCode">creazione</gmd:CI\_DateTypeCode>
+</gmd:dateType>
+</gmd:CI\_Date>
+</gmd:date>
 
-&lt;gmd:CI\_Date&gt;
+<...></...>
 
-&lt;gmd:date&gt;
+</gmd:CI\_Citation>
 
-&lt;gco:Date&gt;1998-10-01&lt;/gco:Date&gt;
+</gmd:citation>
 
-&lt;/gmd:date&gt;
+</gmd:MD\_DataIdentification>
 
-&lt;gmd:dateType&gt; &lt;gmd:CI\_DateTypeCode codeListValue="creation"
-codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO\_19139\_Schemas/resources/codelist/gmxCodelists.xml\#CI\_DateTypeCode"&gt;creazione&lt;/gmd:CI\_DateTypeCode&gt;
+</gmd:identificationInfo>
 
-&lt;/gmd:dateType&gt;
+<...></...>
 
-&lt;/gmd:CI\_Date&gt;
+</gmd:MD\_Metadata>
 
-&lt;/gmd:date&gt;
-
-**…**
-
-&lt;/gmd:CI\_Citation&gt;
-
-&lt;/gmd:citation&gt;
-
-&lt;/gmd:MD\_DataIdentification&gt;
-
-&lt;/gmd:identificationInfo&gt;
-
-**…**
-
-&lt;/gmd:MD\_Metadata&gt;
+```
 
 #### Formato di presentazione
 

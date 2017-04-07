@@ -439,7 +439,7 @@ al caso 2).
 Quanto allo schema XSD di riferimento, per il caso 4) devono essere
 utilizzati gli schemi RNDT.
 
-   >**_RACCOMANDAZIONE 1_** 
+   >**_Raccomandazione 1_** 
 ```
 Considerate le indicazioni fornite nelle linee
 guida INSPIRE, si raccomanda di documentare i metadati utilizzando un
@@ -532,7 +532,7 @@ codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO\_19139\_S
 
 ```
 
-   >**_RACCOMANDAZIONE 2_**
+   >**_Raccomandazione 2_**
 ```
 Da preferire la modalità rappresentata nel primo esempio di tracciato XML che esprime il valore del tag 
 nella lingua dichiarata per i metadati (italiano). Nel caso delle enumerazioni il valore va espresso,
@@ -600,7 +600,7 @@ iPA e la restante parte dell’identificatore è “:” (due punti).
 
 ```
 
-   >**_RACCOMANDAZIONE 3_** 
+   >**_Raccomandazione 3_** 
 ```
 Il formato consigliato è il seguente:
 ***iPA**:cod-Ente:aaaammgg:hhmmss* 
@@ -704,48 +704,93 @@ codeListValue="ita">ita</gmd:LanguageCode>
 
 #### Set dei caratteri dei metadati
 
-  **Nome elemento**                   **Set dei caratteri dei metadati**
-  ----------------------------------- -------------------------------------------------------------------------------------------------------
-  **Riferimento**                     All.2 DM – tab. I-3
-  **Molteplicità**                    \[0..1\]
-  **Elemento INSPIRE**                Nessun elemento corrispondente.
-  **Definizione**                     Nome dello standard del set di caratteri utilizzato per i metadati.
-  **Istruzioni di implementazione**   L’elemento deve assumere uno dei valori della lista “*MD\_CharacterSetCode*” (§ 3.4.3.5 – all. 2 DM).
+<table>
+<tr>
+<td>Riferimento</td>
+<td>All.2 Decreto RNDT – tab. I-3</td>
+</tr>
+<tr>
+<td>Molteplicità</td>
+<td>\[0..1\]</td>
+</tr>
+<tr>
+<td>Elemento INSPIRE</td>
+<td>Nessun elemento corrispondente</td>
+</tr>
+<tr>
+<td>Definizione</td>
+<td>Nome dello standard del set di caratteri utilizzato per i metadati.</td>
+</tr>
+<tr>
+<td>Istruzioni di implementazione</td>
+<td>L’elemento deve assumere uno dei valori della lista “*MD\_CharacterSetCode*” (§ 3.4.3.5 – all. 2 [Decreto RNDT][decreto_RNDT]).</td>
+</tr>
+</table>
 
-**Requisito 4** L’elemento è condizionato: esso deve essere documentato
+
+
+>**REQUISITO 4** 
+
+```
+L’elemento è condizionato: esso deve essere documentato
 se ISO/IEC 10646-1 non è utilizzato e non è definito dall’ecoding (rif.
 ISO 19115).
 
-**Esempio di XML:**
+```
 
-&lt;gmd:MD\_Metadata&gt;
+>**Esempio di XML:**
 
-**…**
 
-&lt;gmd:characterSet&gt;
+```xml
 
-&lt;gmd:MD\_CharacterSetCode
+<gmd:MD\_Metadata>
+
+<...></...>
+
+<gmd:characterSet>
+<gmd:MD\_CharacterSetCode
 codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO\_19139\_Schemas/resources/codelist/gmxCodelists.xml\#
 MD\_CharacterSetCode"
-codeListValue="utf8"&gt;utf8&lt;/gmd:MD\_CharacterSetCode&gt;
+codeListValue="utf8">utf8</gmd:MD\_CharacterSetCode>
+</gmd:characterSet>
 
-&lt;/gmd:characterSet&gt;
+<...></...>
 
-**…**
+</gmd:MD\_Metadata>
 
-&lt;/gmd:MD\_Metadata&gt;
+```
 
 #### Id file precedente
 
-  **Nome elemento**                   **Id file precedente**
-  ----------------------------------- ---------------------------------------------------------------------------------------------------------------------------
-  **Riferimento**                     All.2 DM – tab. I-4
-  **Molteplicità**                    \[1\]
-  **Elemento INSPIRE**                Nessun elemento corrispondente.
-  **Definizione**                     Identificatore univoco del file di metadati dell’ eventuale trasmissione precedente a cui il file corrente è relazionato.
-  **Istruzioni di implementazione**   Testo libero. Per quanto riguarda il formato e i relativi requisiti, vale anche quanto indicato al § 2.1.1.1.
+<table>
+<tr>
+<td>Riferimento</td>
+<td>All.2 Decreto RNDT – tab. I-4</td>
+</tr>
+<tr>
+<td>Molteplicità</td>
+<td>\[1\]</td>
+</tr>
+<tr>
+<td>Elemento INSPIRE</td>
+<td>Nessun elemento corrispondente</td>
+</tr>
+<tr>
+<td>Definizione</td>
+<td>Identificatore univoco del file di metadati dell’ eventuale trasmissione precedente a cui il file corrente è relazionato.</td>
+</tr>
+<tr>
+<td>Istruzioni di implementazione</td>
+<td>Testo libero. Per quanto riguarda il formato e i relativi requisiti, vale anche quanto indicato al § 2.1.1.1.</td>
+</tr>
+</table>
 
-**Requisito 5** L’elemento serve a tracciare la “storia” delle
+
+>**REQUISITO 5** 
+
+
+```
+L’elemento serve a tracciare la “storia” delle
 trasmissioni dei file XML e quindi degli aggiornamenti dei metadati.
 Esso deve assumere il valore dell’elemento “*Identificatore del file*”
 del file trasmesso temporalmente in precedenza e a cui il file corrente
@@ -753,244 +798,256 @@ del file trasmesso temporalmente in precedenza e a cui il file corrente
 file precedente) l’elemento assume lo stesso valore dell’elemento
 “*Identificatore del file*” del file corrente.
 
-**Esempio di XML:**
+```
 
-&lt;gmd:MD\_Metadata&gt;
+>**Esempio di XML:**
 
-**…**
+```xml
+<gmd:MD\_Metadata>
 
-&lt;gmd:parentIdentifier&gt;
+<...></...>
 
-&lt;gco:CharacterString&gt;r\_campan:000001:20090124:093213&lt;/gco:CharacterString&gt;
+<gmd:parentIdentifier>
+<gco:CharacterString>r\_campan:000001:20090124:093213</gco:CharacterString>
+</gmd:parentIdentifier>
 
-&lt;/gmd:parentIdentifier&gt;
+<...></...>
 
-**…**
-
-&lt;/gmd:MD\_Metadata&gt;
+</gmd:MD\_Metadata>
+```
 
 #### Livello gerarchico
 
-  **Nome elemento**                   **Livello gerarchico**
-  ----------------------------------- -------------------------------------------------------------------------------------------------
-  **Riferimento**                     All.2 DM – tab. I-5
-  **Molteplicità**                    \[1\]
-  **Elemento INSPIRE**                Tipo di risorsa
-  **Definizione**                     Categoria di informazione cui vengono applicati i metadati.
-  **Istruzioni di implementazione**   L’elemento deve assumere uno dei valori della lista “*MD\_ScopeCode*” (§ 3.4.3.13 - all. 2 DM).
+<table>
+<tr>
+<td>Riferimento</td>
+<td>All.2 Decreto RNDT – tab. I-5</td>
+</tr>
+<tr>
+<td>Molteplicità</td>
+<td>\[1\]</td>
+</tr>
+<tr>
+<td>Elemento INSPIRE</td>
+<td>Tipo di risorsa</td>
+</tr>
+<tr>
+<td>Definizione</td>
+<td>Categoria di informazione cui vengono applicati i metadati.</td>
+</tr>
+<tr>
+<td>Istruzioni di implementazione</td>
+<td>L’elemento deve assumere uno dei valori della lista “*MD\_ScopeCode*” (§ 3.4.3.13 - all. 2 DM).</td>
+</tr>
+</table>
 
-**Requisito 6** L'elemento è opzionale per ISO 19115, ma è obbligatorio
+
+>**REQUISITO 6** 
+
+```
+L'elemento è opzionale per ISO 19115, ma è obbligatorio
 per il RNDT in base al DM 10/11/2011 e al Regolamento 1205/2008/CE.
 
-**Requisito 7** I valori della lista *MD\_ScopeCode* ammissibili per
+```
+
+>**REQUISITO 7** 
+
+```
+I valori della lista *MD\_ScopeCode* ammissibili per
 INSPIRE sono: **dataset** o **serie**.
 
-**Raccomandazione 4** La scelta del valore più appropriato per il tipo
+```
+
+>**_Raccomandazione 4_** 
+
+```
+La scelta del valore più appropriato per il tipo
 di risorsa dovrebbe essere fatta tenendo conto delle definizioni
 presenti al § 2 all. 2 del DM 10/11/2011 e alle seguenti indicazioni:
 
-- **dataset**: collezione identificabile di dati che può essere parte di
+- dataset: collezione identificabile di dati che può essere parte di
 una serie oppure una risorsa a sè stante;
 
-- **serie**: collezione di risorse o di dataset in relazione tra di loro
+- serie: collezione di risorse o di dataset in relazione tra di loro
 che condividono le stesse specifiche di prodotto.
+
+```
 
 **Esempio di XML:**
 
-&lt;gmd:MD\_Metadata&gt;
+```xml
+<gmd:MD\_Metadata>
 
-**…**
+<...></...>
 
-&lt;gmd:hierarchyLevel&gt;
-
-&lt;gmd:MD\_ScopeCode
+<gmd:hierarchyLevel>
+<gmd:MD\_ScopeCode
 codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO\_19139\_Schemas/resources/codelist/gmxCodelists.xml\#MD\_ScopeCode"
-codeListValue="dataset"&gt;dataset&lt;/gmd:MD\_ScopeCode&gt;
+codeListValue="dataset">dataset</gmd:MD\_ScopeCode>
+</gmd:hierarchyLevel>
 
-&lt;/gmd:hierarchyLevel&gt;
+<...></...>
 
-**…**
-
-&lt;/gmd:MD\_Metadata&gt;
+</gmd:MD\_Metadata>
+```
 
 #### Responsabile dei metadati
 
-  ----------------------------------------------------------------------------------------------------------------------------------------------
-  **Nome elemento**                   **Responsabile dei metadati**
-  ----------------------------------- ----------------------------------------------------------------------------------------------------------
-  **Riferimento**                     All.2 DM – tab. I-6 (I-6.1, I-6.2, I-6.3, I-6.4 )
+<table>
+<tr>
+<td>Riferimento</td>
+<td>All.2 Decreto RNDT – tab. I-6 (I-6.1, I-6.2, I-6.3, I-6.4)</td>
+</tr>
+<tr>
+<td>Molteplicità</td>
+<td>\[1..\*\]</td>
+</tr>
+<tr>
+<td>Elemento INSPIRE</td>
+<td>Punto di contatto dei metadati</td>
+</tr>
+<tr>
+<td>Definizione</td>
+<td>Organizzazione responsabile della creazione e della manutenzione dei metadati.</td>
+</tr>
+<tr>
+<td>Istruzioni di implementazione</td>
+<td> -   **Nome dell’Ente** \[1\] - Testo libero                                 
+     -   **Ruolo** \[1\] – Fare riferimento alla lista *CI\_RoleCode* di cui al § 3.4.3.3 - all. 2 DM.
+     -   **Sito web** \[0..1\] - formato URL. Specificare obbligatoriamente anche il protocollo (es. *http*).
+     -   **Telefono** \[0..1\] - Testo libero.
+     -   **E-mail** \[1..\*\] - Testo libero.
+</td>
+</tr>
+</table>
 
-  **Molteplicità**                    \[1..\*\]
 
-  **Elemento INSPIRE**                Punto di contatto dei metadati
+>**REQUISITO 8** 
 
-  **Definizione**                     Organizzazione responsabile della creazione e della manutenzione dei metadati.
-
-  **Istruzioni di implementazione**   -   **Nome dell’Ente** \[1\] - Testo libero
-                                      
-                                      -   **Ruolo** \[1\] – Fare riferimento alla lista *CI\_RoleCode* di cui al § 3.4.3.3 - all. 2 DM.
-                                      
-                                      -   **Sito web** \[0..1\] - formato URL. Specificare obbligatoriamente anche il protocollo (es. *http*).
-                                      
-                                      -   **Telefono** \[0..1\] - Testo libero.
-                                      
-                                      -   **E-mail** \[1..\*\] - Testo libero.
-                                      
-  ----------------------------------------------------------------------------------------------------------------------------------------------
-
-**Requisito 8** Devono essere forniti i seguenti elementi: **nome
+```
+Devono essere forniti i seguenti elementi: **nome
 dell'Ente**, **ruolo**, **indirizzo e-mail**, **sito web** e/o
 **riferimento telefonico**.
 
-**Requisito 9** Il valore della codelist CI\_RoleCode per il ruolo deve
+```
+
+>**REQUISITO 9** 
+
+```
+Il valore della codelist CI\_RoleCode per il ruolo deve
 essere "**punto di contatto**" (**pointOfContact**).
 
-**Requisito 10** Come indicato all'allegato 2 del DM, deve essere
+```
+
+>**REQUISITO 10** 
+
+```
+Come indicato all'allegato 2 del DM, deve essere
 documentato **almeno uno dei due** metadati tra "Sito web" e "Telefono".
 
-**Raccomandazione 5** Il nome dell'Ente dovrebbe essere riportato per
+```
+
+>**_Raccomandazione 5_** 
+
+```
+Il nome dell'Ente dovrebbe essere riportato per
 intero, senza abbreviazioni. Indicare il nome completo dell’ufficio
 responsabile della comunicazione dei metadati come indicato all’atto
 dell’accreditamento IPA. Si consiglia di indicare indirizzi e-mail
 istituzionali e non personali.
 
+```
+
 **Esempio di XML:**
 
-&lt;gmd:MD\_Metadata&gt;
+```xml
+<gmd:MD\_Metadata>
 
-**…**
+<...></...>
 
-&lt;gmd:contact&gt;
+<gmd:contact>
 
-&lt;gmd:CI\_ResponsibleParty&gt;
+<gmd:CI\_ResponsibleParty>
 
-&lt;gmd:organisationName&gt;
+<gmd:organisationName>
+<gco:CharacterString>Regione Piemonte – Settore cartografia e
+sistema informativo territoriale</gco:CharacterString>
+</gmd:organisationName>
+<gmd:contactInfo>
+<gmd:CI\_Contact>
+<gmd:address>
+<gmd:CI\_Address>
+<gmd:electronicMailAddress>
+<gco:CharacterString>sitad@csi.it</gco:CharacterString>
+</gmd:electronicMailAddress>
+</gmd:CI\_Address>
+</gmd:address>
+<gmd:onlineResource>
+<gmd:CI\_OnlineResource>
+<gmd:linkage>
+<gmd:URL>http://www.sistemapiemonte.it/serviziositad/</gmd:URL>
+</gmd:linkage>
+</gmd:CI\_OnlineResource>
+</gmd:onlineResource>
+</gmd:CI\_Contact>
+</gmd:contactInfo>
+<gmd:role>
+<gmd:CI\_RoleCode codeListValue="pointOfContact"
+codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO\_19139\_Schemas/resources/codelist/gmxCodelists.xml\#CI\_RoleCode">punto di contatto</gmd:CI\_RoleCode>
+</gmd:role>
+</gmd:CI\_ResponsibleParty>
+</gmd:contact>
 
-&lt;gco:CharacterString&gt;Regione Piemonte – Settore cartografia e
-sistema informativo territoriale&lt;/gco:CharacterString&gt;
+<...></...>
 
-&lt;/gmd:organisationName&gt;
+</gmd:MD\_Metadata>
 
-&lt;gmd:contactInfo&gt;
-
-&lt;gmd:CI\_Contact&gt;
-
-&lt;gmd:address&gt;
-
-&lt;gmd:CI\_Address&gt;
-
-&lt;gmd:electronicMailAddress&gt;
-
-&lt;gco:CharacterString&gt;sitad@csi.it&lt;/gco:CharacterString&gt;
-
-&lt;/gmd:electronicMailAddress&gt;
-
-&lt;/gmd:CI\_Address&gt;
-
-&lt;/gmd:address&gt;
-
-&lt;gmd:onlineResource&gt;
-
-&lt;gmd:CI\_OnlineResource&gt;
-
-&lt;gmd:linkage&gt;
-
-&lt;gmd:URL&gt;http://www.sistemapiemonte.it/serviziositad/&lt;/gmd:URL&gt;
-
-&lt;/gmd:linkage&gt;
-
-&lt;/gmd:CI\_OnlineResource&gt;
-
-&lt;/gmd:onlineResource&gt;
-
-&lt;/gmd:CI\_Contact&gt;
-
-&lt;/gmd:contactInfo&gt;
-
-&lt;gmd:role&gt;
-
-&lt;gmd:CI\_RoleCode codeListValue="pointOfContact"
-codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO\_19139\_Schemas/resources/codelist/gmxCodelists.xml\#CI\_RoleCode"&gt;punto
-di contatto&lt;/gmd:CI\_RoleCode&gt;
-
-&lt;/gmd:role&gt;
-
-&lt;/gmd:CI\_ResponsibleParty&gt;
-
-&lt;/gmd:contact&gt;
-
-**…**
-
-&lt;/gmd:MD\_Metadata&gt;
+```
 
 oppure
 
-&lt;gmd:MD\_Metadata&gt;
+```xml
 
-**…**
+<gmd:MD\_Metadata>
 
-&lt;gmd:contact&gt;
+<...></...>
 
-&lt;gmd:CI\_ResponsibleParty&gt;
+<gmd:contact>
+<gmd:CI\_ResponsibleParty>
+<gmd:organisationName>
+<gco:CharacterString>Regione Piemonte – Settore cartografia e
+sistema informativo territoriale</gco:CharacterString>
+</gmd:organisationName>
+<gmd:contactInfo>
+<gmd:CI\_Contact>
+<gmd:phone>
+<gmd:CI\_Telephone>
+<gmd:voice>
+<gco:CharacterString>0114321428</gco:CharacterString>
+</gmd:voice>
+</gmd:CI\_Telephone>
+</gmd:phone>
+<gmd:onlineResource>
+<gmd:CI\_OnlineResource>
+<gmd:linkage>
+<gmd:URL>http://www.sistemapiemonte.it/serviziositad/</gmd:URL>
+</gmd:linkage>
+</gmd:CI\_OnlineResource>
+</gmd:onlineResource>
+</gmd:CI\_Contact>
+</gmd:contactInfo>
+<gmd:role>
+<gmd:CI\_RoleCode codeListValue="pointOfContact"
+codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO\_19139\_Schemas/resources/codelist/gmxCodelists.xml\#CI\_RoleCode">punto di contatto</gmd:CI\_RoleCode>
+</gmd:role>
+</gmd:CI\_ResponsibleParty>
+</gmd:contact>
 
-&lt;gmd:organisationName&gt;
+<...></...>
 
-&lt;gco:CharacterString&gt;Regione Piemonte – Settore cartografia e
-sistema informativo territoriale&lt;/gco:CharacterString&gt;
+</gmd:MD\_Metadata>
 
-&lt;/gmd:organisationName&gt;
-
-&lt;gmd:contactInfo&gt;
-
-&lt;gmd:CI\_Contact&gt;
-
-&lt;gmd:phone&gt;
-
-&lt;gmd:CI\_Telephone&gt;
-
-&lt;gmd:voice&gt;
-
-&lt;gco:CharacterString&gt;0114321428&lt;/gco:CharacterString&gt;
-
-&lt;/gmd:voice&gt;
-
-&lt;/gmd:CI\_Telephone&gt;
-
-&lt;/gmd:phone&gt;
-
-&lt;gmd:onlineResource&gt;
-
-&lt;gmd:CI\_OnlineResource&gt;
-
-&lt;gmd:linkage&gt;
-
-&lt;gmd:URL&gt;http://www.sistemapiemonte.it/serviziositad/&lt;/gmd:URL&gt;
-
-&lt;/gmd:linkage&gt;
-
-&lt;/gmd:CI\_OnlineResource&gt;
-
-&lt;/gmd:onlineResource&gt;
-
-&lt;/gmd:CI\_Contact&gt;
-
-&lt;/gmd:contactInfo&gt;
-
-&lt;gmd:role&gt;
-
-&lt;gmd:CI\_RoleCode codeListValue="pointOfContact"
-codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO\_19139\_Schemas/resources/codelist/gmxCodelists.xml\#CI\_RoleCode"&gt;punto
-di contatto&lt;/gmd:CI\_RoleCode&gt;
-
-&lt;/gmd:role&gt;
-
-&lt;/gmd:CI\_ResponsibleParty&gt;
-
-&lt;/gmd:contact&gt;
-
-**…**
-
-&lt;/gmd:MD\_Metadata&gt;
+```
 
 #### Data dei metadati
 

@@ -1401,51 +1401,62 @@ codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO\_19139\_S
 
 #### Formato di presentazione
 
-  **Nome elemento**                   **Formato di presentazione**
-  ----------------------------------- -----------------------------------------------------------------------------------------------------------
-  **Riferimento**                     All.2 DM – tab. I-12
-  **Molteplicità**                    \[1..\*\]
-  **Elemento INSPIRE**                Nessun elemento corrispondente
-  **Definizione**                     Modalità in cui la risorsa è rappresentata.
-  **Istruzioni di implementazione**   L’elemento deve assumere uno dei valori della lista “*CI\_PresentationFormCode*” (§ 3.4.3.2 - all. 2 DM).
+<table>
+<tr>
+<td>Riferimento</td>
+<td>All.2 Decreto RNDT – tab. I-12</td>
+</tr>
+<tr>
+<td>Molteplicità</td>
+<td>\[1..\*\]</td>
+</tr>
+<tr>
+<td>Elemento INSPIRE</td>
+<td>Nessun elemento corrispondente</td>
+</tr>
+<tr>
+<td>Definizione</td>
+<td>Modalità in cui la risorsa è rappresentata.</td>
+</tr>
+<tr>
+<td>Istruzioni di implementazione</td>
+<td>L’elemento deve assumere uno dei valori della lista “*CI\_PresentationFormCode*” (§ 3.4.3.2 - all. 2 DM).</td>
+</tr>
+</table>
 
-**Esempio di XML:**
 
-&lt;gmd:MD\_Metadata&gt;
+>**Esempio di XML:**
 
-**…**
+```xml
+<gmd:MD\_Metadata>
 
-&lt;gmd:identificationInfo&gt;
+<...></...>
 
-&lt;gmd:MD\_DataIdentification&gt;
+<gmd:identificationInfo>
+<gmd:MD\_DataIdentification>
+<gmd:citation>
+<gmd:CI\_Citation>
 
-&lt;gmd:citation&gt;
+<...></...>
 
-&lt;gmd:CI\_Citation&gt;
+<gmd:presentationForm>
+<gmd:CI\_PresentationFromCode codeListValue="mapDigital"
+codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO\_19139\_Schemas/resources/codelist/gmxCodelists.xml\#CI\_PresentationFormCode">mappa
+digitale</gmd:CI\_PresentationFormCode>
+</gmd:presentationForm>
 
-**…**
+<...></...>
 
-&lt;gmd:presentationForm&gt;
+</gmd:CI\_Citation>
+</gmd:citation>
+</gmd:MD\_DataIdentification>
+</gmd:identificationInfo>
 
-&lt;gmd:CI\_PresentationFromCode codeListValue="mapDigital"
-codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO\_19139\_Schemas/resources/codelist/gmxCodelists.xml\#CI\_PresentationFormCode"&gt;mappa
-digitale&lt;/gmd:CI\_PresentationFormCode&gt;
+<...></...>
 
-&lt;/gmd:presentationForm&gt;
+</gmd:MD\_Metadata>
 
-**…**
-
-&lt;/gmd:CI\_Citation&gt;
-
-&lt;/gmd:citation&gt;
-
-&lt;/gmd:MD\_DataIdentification&gt;
-
-&lt;/gmd:identificationInfo&gt;
-
-**…**
-
-&lt;/gmd:MD\_Metadata&gt;
+```
 
 #### Responsabile
 

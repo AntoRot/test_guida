@@ -514,9 +514,8 @@ Pertanto, si ritiene valido il tracciato XML seguente:
 ```xml
 
 <gmd:role>
-<gmd:CI\_RoleCode codeListValue="pointOfContact"
-codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO\_19139\_Schemas/resources/codelist/gmxCodelists.xml\#CI\_RoleCode">punto
-di contatto</gmd:CI\_RoleCode>
+<gmd:CI_RoleCode codeListValue="pointOfContact"
+codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_RoleCode">punto di contatto</gmd:CI_RoleCode>
 </gmd:role>
 
 ```
@@ -526,8 +525,8 @@ oppure
 ```xml
 
 <gmd:role>
-<gmd:CI\_RoleCode codeListValue="pointOfContact"
-codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO\_19139\_Schemas/resources/codelist/gmxCodelists.xml\#CI\_RoleCode">pointOfContact</gmd:CI\_RoleCode>
+<gmd:CI_RoleCode codeListValue="pointOfContact"
+codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_RoleCode">pointOfContact</gmd:CI_RoleCode>
 </gmd:role>
 
 ```
@@ -544,9 +543,9 @@ Non è valido, invece, il tracciato seguente:
 ```xml
 
 <gmd:role>
-<gmd:CI\_RoleCode codeListValue="pointOfContact"
-codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO\_19139\_Schemas/resources/
-codelist/gmxCodelists.xml\#CI\_RoleCode"/>
+<gmd:CI_RoleCode codeListValue="pointOfContact"
+codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/
+codelist/gmxCodelists.xml#CI_RoleCode"/>
 </gmd:role>
 
 ```
@@ -614,14 +613,14 @@ dove:
 >**Esempio di XML**
 
 ```xml 
-<gmd:MD\_Metadata>
+<gmd:MD_Metadata>
  <gmd:fileIdentifier>
   <gco:CharacterString>r_campan:000002:20090220:111239</gco:CharacterString>
  </gmd:fileIdentifier>
  
 <...></...>
 
-</gmd:MD\_Metadata>
+</gmd:MD_Metadata>
 
 ```
 `Lingua dei metadati`
@@ -687,7 +686,7 @@ L'elemento è opzionale per ISO 19115, ma è obbligatorio per il RNDT in base al
 >**Esempio di XML:**
 
 ```xml
-<gmd:MD\_Metadata>
+<gmd:MD_Metadata>
 
 <...></...>
 
@@ -698,7 +697,7 @@ codeListValue="ita">ita</gmd:LanguageCode>
 
 <...></...>
 
-</gmd:MD\_Metadata>
+</gmd:MD_Metadata>
 
 ```
 
@@ -743,20 +742,20 @@ ISO 19115).
 
 ```xml
 
-<gmd:MD\_Metadata>
+<gmd:MD_Metadata>
 
 <...></...>
 
 <gmd:characterSet>
-<gmd:MD\_CharacterSetCode
-codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO\_19139\_Schemas/resources/codelist/gmxCodelists.xml\#
-MD\_CharacterSetCode"
-codeListValue="utf8">utf8</gmd:MD\_CharacterSetCode>
+<gmd:MD_CharacterSetCode
+codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#
+MD_CharacterSetCode"
+codeListValue="utf8">utf8</gmd:MD_CharacterSetCode>
 </gmd:characterSet>
 
 <...></...>
 
-</gmd:MD\_Metadata>
+</gmd:MD_Metadata>
 
 ```
 
@@ -803,17 +802,17 @@ file precedente) l’elemento assume lo stesso valore dell’elemento
 >**Esempio di XML:**
 
 ```xml
-<gmd:MD\_Metadata>
+<gmd:MD_Metadata>
 
 <...></...>
 
 <gmd:parentIdentifier>
-<gco:CharacterString>r\_campan:000001:20090124:093213</gco:CharacterString>
+<gco:CharacterString>r_campan:000001:20090124:093213</gco:CharacterString>
 </gmd:parentIdentifier>
 
 <...></...>
 
-</gmd:MD\_Metadata>
+</gmd:MD_Metadata>
 ```
 
 #### Livello gerarchico
@@ -876,19 +875,19 @@ che condividono le stesse specifiche di prodotto.
 **Esempio di XML:**
 
 ```xml
-<gmd:MD\_Metadata>
+<gmd:MD_Metadata>
 
 <...></...>
 
 <gmd:hierarchyLevel>
-<gmd:MD\_ScopeCode
-codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO\_19139\_Schemas/resources/codelist/gmxCodelists.xml\#MD\_ScopeCode"
-codeListValue="dataset">dataset</gmd:MD\_ScopeCode>
+<gmd:MD_ScopeCode
+codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#MD_ScopeCode"
+codeListValue="dataset">dataset</gmd:MD_ScopeCode>
 </gmd:hierarchyLevel>
 
 <...></...>
 
-</gmd:MD\_Metadata>
+</gmd:MD_Metadata>
 ```
 
 #### Responsabile dei metadati
@@ -961,46 +960,46 @@ istituzionali e non personali.
 **Esempio di XML:**
 
 ```xml
-<gmd:MD\_Metadata>
+<gmd:MD_Metadata>
 
 <...></...>
 
 <gmd:contact>
 
-<gmd:CI\_ResponsibleParty>
+<gmd:CI_ResponsibleParty>
 
 <gmd:organisationName>
 <gco:CharacterString>Regione Piemonte – Settore cartografia e
 sistema informativo territoriale</gco:CharacterString>
 </gmd:organisationName>
 <gmd:contactInfo>
-<gmd:CI\_Contact>
+<gmd:CI_Contact>
 <gmd:address>
-<gmd:CI\_Address>
+<gmd:CI_Address>
 <gmd:electronicMailAddress>
 <gco:CharacterString>sitad@csi.it</gco:CharacterString>
 </gmd:electronicMailAddress>
-</gmd:CI\_Address>
+</gmd:CI_Address>
 </gmd:address>
 <gmd:onlineResource>
-<gmd:CI\_OnlineResource>
+<gmd:CI_OnlineResource>
 <gmd:linkage>
 <gmd:URL>http://www.sistemapiemonte.it/serviziositad/</gmd:URL>
 </gmd:linkage>
-</gmd:CI\_OnlineResource>
+</gmd:CI_OnlineResource>
 </gmd:onlineResource>
-</gmd:CI\_Contact>
+</gmd:CI_Contact>
 </gmd:contactInfo>
 <gmd:role>
-<gmd:CI\_RoleCode codeListValue="pointOfContact"
-codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO\_19139\_Schemas/resources/codelist/gmxCodelists.xml\#CI\_RoleCode">punto di contatto</gmd:CI\_RoleCode>
+<gmd:CI_RoleCode codeListValue="pointOfContact"
+codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_RoleCode">punto di contatto</gmd:CI_RoleCode>
 </gmd:role>
-</gmd:CI\_ResponsibleParty>
+</gmd:CI_ResponsibleParty>
 </gmd:contact>
 
 <...></...>
 
-</gmd:MD\_Metadata>
+</gmd:MD_Metadata>
 
 ```
 
@@ -1008,44 +1007,44 @@ oppure
 
 ```xml
 
-<gmd:MD\_Metadata>
+<gmd:MD_Metadata>
 
 <...></...>
 
 <gmd:contact>
-<gmd:CI\_ResponsibleParty>
+<gmd:CI_ResponsibleParty>
 <gmd:organisationName>
 <gco:CharacterString>Regione Piemonte – Settore cartografia e
 sistema informativo territoriale</gco:CharacterString>
 </gmd:organisationName>
 <gmd:contactInfo>
-<gmd:CI\_Contact>
+<gmd:CI_Contact>
 <gmd:phone>
-<gmd:CI\_Telephone>
+<gmd:CI_Telephone>
 <gmd:voice>
 <gco:CharacterString>0114321428</gco:CharacterString>
 </gmd:voice>
-</gmd:CI\_Telephone>
+</gmd:CI_Telephone>
 </gmd:phone>
 <gmd:onlineResource>
-<gmd:CI\_OnlineResource>
+<gmd:CI_OnlineResource>
 <gmd:linkage>
 <gmd:URL>http://www.sistemapiemonte.it/serviziositad/</gmd:URL>
 </gmd:linkage>
-</gmd:CI\_OnlineResource>
+</gmd:CI_OnlineResource>
 </gmd:onlineResource>
-</gmd:CI\_Contact>
+</gmd:CI_Contact>
 </gmd:contactInfo>
 <gmd:role>
-<gmd:CI\_RoleCode codeListValue="pointOfContact"
-codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO\_19139\_Schemas/resources/codelist/gmxCodelists.xml\#CI\_RoleCode">punto di contatto</gmd:CI\_RoleCode>
+<gmd:CI_RoleCode codeListValue="pointOfContact"
+codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_RoleCode">punto di contatto</gmd:CI_RoleCode>
 </gmd:role>
-</gmd:CI\_ResponsibleParty>
+</gmd:CI_ResponsibleParty>
 </gmd:contact>
 
 <...></...>
 
-</gmd:MD\_Metadata>
+</gmd:MD_Metadata>
 
 ```
 
@@ -1088,7 +1087,7 @@ Standard ISO 8601: *aaaa-mm-gg* oppure *aaaammgg*, dove *aaaa* è l'anno,
 
 ```xml
 
-<gmd:MD\_Metadata>
+<gmd:MD_Metadata>
 
 <...></...>
 
@@ -1098,7 +1097,7 @@ Standard ISO 8601: *aaaa-mm-gg* oppure *aaaammgg*, dove *aaaa* è l'anno,
 
 <...></...>
 
-<gmd:MD\_Metadata>
+</gmd:MD_Metadata>
 
 ```
 
@@ -1140,7 +1139,7 @@ inserito è “*DM - Regole tecniche RNDT*”.
 >**Esempio di XML:**
 
 ```xml
-<gmd:MD\_Metadata>
+<gmd:MD_Metadata>
 
 <...></...>
 
@@ -1153,7 +1152,7 @@ RNDT</gco:CharacterString>
 
 <...></...>
 
-</gmd:MD\_Metadata>
+</gmd:MD_Metadata>
 
 ```
 
@@ -1197,7 +1196,7 @@ inserito è “*10 novembre 2011*”.
 
 ```xml
 
-<gmd:MD\_Metadata>
+<gmd:MD_Metadata>
 
 <...></...>
 
@@ -1207,7 +1206,7 @@ inserito è “*10 novembre 2011*”.
 
 <...></...>
 
-</gmd:MD\_Metadata>
+</gmd:MD_Metadata>
 
 ```
 
@@ -1266,26 +1265,26 @@ risorsa.
 
 ```xml
 
-<gmd:MD\_Metadata>
+<gmd:MD_Metadata>
 
 <...></...>
 
 <gmd:identificationInfo>
-<gmd:MD\_DataIdentification>
+<gmd:MD_DataIdentification>
 <gmd:citation>
-<gmd:CI\_Citation>
+<gmd:CI_Citation>
 <gmd:title>
 <gco:CharacterString>Database Topografico della Regione
 Puglia</gco:CharacterString>
 </gmd:title>
-</gmd:CI\_Citation>
+</gmd:CI_Citation>
 </gmd:citation>
-</gmd:MD\_DataIdentification>
+</gmd:MD_DataIdentification>
 </gmd:identificationInfo>
 
 <...></...>
 
-</gmd:MD\_Metadata>
+</gmd:MD_Metadata>
 
 ```
 
@@ -1360,42 +1359,42 @@ questa deve essere una sola.
 
 ```xml
 
-<gmd:MD\_Metadata>
+<gmd:MD_Metadata>
 
 <...></...>
 
 <gmd:identificationInfo>
-<gmd:MD\_DataIdentification>
+<gmd:MD_DataIdentification>
 <gmd:citation>
-<gmd:CI\_Citation>
+<gmd:CI_Citation>
 
 <...></...>
 
 <gmd:date>
-<gmd:CI\_Date>
+<gmd:CI_Date>
 <gmd:date>
 <gco:Date>1998-10-01</gco:Date>
 </gmd:date>
 <gmd:dateType>
-<gmd:CI\_DateTypeCode codeListValue="creation"
-codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO\_19139\_Schemas/resources/codelist/gmxCodelists.xml\#CI\_DateTypeCode">creazione</gmd:CI\_DateTypeCode>
+<gmd:CI_DateTypeCode codeListValue="creation"
+codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_DateTypeCode">creazione</gmd:CI_DateTypeCode>
 </gmd:dateType>
-</gmd:CI\_Date>
+</gmd:CI_Date>
 </gmd:date>
 
 <...></...>
 
-</gmd:CI\_Citation>
+</gmd:CI_Citation>
 
 </gmd:citation>
 
-</gmd:MD\_DataIdentification>
+</gmd:MD_DataIdentification>
 
 </gmd:identificationInfo>
 
 <...></...>
 
-</gmd:MD\_Metadata>
+</gmd:MD_Metadata>
 
 ```
 
@@ -1428,247 +1427,292 @@ codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO\_19139\_S
 >**Esempio di XML:**
 
 ```xml
-<gmd:MD\_Metadata>
+<gmd:MD_Metadata>
 
 <...></...>
 
 <gmd:identificationInfo>
-<gmd:MD\_DataIdentification>
+<gmd:MD_DataIdentification>
 <gmd:citation>
-<gmd:CI\_Citation>
+<gmd:CI_Citation>
 
 <...></...>
 
 <gmd:presentationForm>
-<gmd:CI\_PresentationFromCode codeListValue="mapDigital"
-codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO\_19139\_Schemas/resources/codelist/gmxCodelists.xml\#CI\_PresentationFormCode">mappa
-digitale</gmd:CI\_PresentationFormCode>
+<gmd:CI_PresentationFormCode codeListValue="mapDigital"
+codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_PresentationFormCode">mappa
+digitale</gmd:CI_PresentationFormCode>
 </gmd:presentationForm>
 
 <...></...>
 
-</gmd:CI\_Citation>
+</gmd:CI_Citation>
 </gmd:citation>
-</gmd:MD\_DataIdentification>
+</gmd:MD_DataIdentification>
 </gmd:identificationInfo>
 
 <...></...>
 
-</gmd:MD\_Metadata>
+</gmd:MD_Metadata>
 
 ```
 
 #### Responsabile
 
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **Nome elemento**                   **Responsabile**
-  ----------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **Riferimento**                     All.2 DM – tab. I-13 (I-13.1, I-13.2, I-13.3, I-13.4)
+<table>
+<tr>
+<td>Riferimento</td>
+<td>All.2 Decreto RNDT – tab. I-13 (I-13.1, I-13.2, I-13.3, I-13.4)</td>
+</tr>
+<tr>
+<td>Molteplicità</td>
+<td>\[1..\*\]</td>
+</tr>
+<tr>
+<td>Elemento INSPIRE</td>
+<td>Nessun elemento corrispondente</td>
+</tr>
+<tr>
+<td>Definizione</td>
+<td>Organizzazione titolare dei dati.</td>
+</tr>
+<tr>
+<td>Istruzioni di implementazione</td>
+<td> - Nome dell’Ente \[1\] – Testo libero.
+     - Ruolo \[1\] – L’elemento deve assumere uno dei valori della lista “*CI\_RoleCode*” (§3.4.3.3 - all. 2 DM), tranne “*punto di contatto*” (*pointOfContact*) e “*distributore*” (*distributor*).
+     - Sito web \[0..1\] - formato URL. Specificare obbligatoriamente anche il protocollo (es. *http*).
+     - Telefono \[0..1\] - Testo libero.
+     - E-mail \[1..\*\] - Testo libero.</td>
+</tr>
+</table>
 
-  **Molteplicità**                    \[1..\*\]
 
-  **Elemento INSPIRE**                Nessun elemento corrispondente
+>**REQUISITO 17** 
 
-  **Definizione**                     Organizzazione titolare dei dati.
-
-  **Istruzioni di implementazione**   -   **Nome dell’Ente** \[1\] – Testo libero.
-                                      
-                                      -   **Ruolo** \[1\] – L’elemento deve assumere uno dei valori della lista “*CI\_RoleCode*” (§3.4.3.3 - all. 2 DM), tranne “*punto di contatto*” (*pointOfContact*) e “*distributore*” (*distributor*).
-                                      
-                                      -   **Sito web** \[0..1\] - formato URL. Specificare obbligatoriamente anche il protocollo (es. *http*).
-                                      
-                                      -   **Telefono** \[0..1\] - Testo libero.
-                                      
-                                      -   **E-mail** \[1..\*\] - Testo libero.
-                                      
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-**Requisito 17** Devono essere forniti i seguenti elementi: **nome
+```
+Devono essere forniti i seguenti elementi: **nome
 dell'Ente**, **ruolo**, **indirizzo e-mail**, **sito web** o
 **riferimento telefonico**.
 
-**Requisito 18** Come indicato all'allegato 2 del DM, deve essere
+```
+
+>**REQUISITO 18** 
+
+```
+Come indicato all'allegato 2 del DM, deve essere
 documentato almeno uno dei due metadati tra "Sito web" e "Telefono".
 
-**Raccomandazione 9** Il nome dell'Ente dovrebbe essere riportato per
+```
+
+>**_Raccomandazione 9_** 
+
+```
+Il nome dell'Ente dovrebbe essere riportato per
 intero, senza abbreviazioni. Indicare il nome completo dell’ufficio
 responsabile dei dati. Si consiglia di indicare indirizzi e-mail
 istituzionali e non personali.
 
-**Raccomandazione 10** Scegliere i ruoli che meglio rappresentano la
+```
+
+>**_Raccomandazione 10_** 
+
+```
+Scegliere i ruoli che meglio rappresentano la
 funzione svolta dall'organizzazione responsabile.
 
-**Esempio di XML:**
+```
 
-&lt;gmd:MD\_Metadata&gt;
+>**Esempio di XML:**
 
-**…**
+```xml
 
-&lt;gmd:identificationInfo&gt;
+<gmd:MD_Metadata>
 
-&lt;gmd:MD\_DataIdentification&gt;
+<...></...>
 
-&lt;gmd:citation&gt;
+<gmd:identificationInfo>
+<gmd:MD_DataIdentification>
+<gmd:citation>
+<gmd:CI_Citation>
 
-&lt;gmd:CI\_Citation&gt;
+<...></...>
 
-**…**
+<gmd:citedResponsibleParty>
+<gmd:CI_ResponsibleParty>
+<gmd:organisationName>
+<gco:CharacterString>Regione Piemonte – Settore cartografia e
+sistema informativo territoriale</gco:CharacterString>
+</gmd:organisationName>
+<gmd:contactInfo>
+<gmd:CI_Contact>
+<gmd:address>
+<gmd:CI_Address>
+<gmd:electronicMailAddress>
+<gco:CharacterString>sitad@csi.it</gco:CharacterString>
+</gmd:electronicMailAddress>
+</gmd:CI_Address>
+</gmd:address>
+<gmd:onlineResource>
+<gmd:CI_OnlineResource>
+<gmd:linkage>
+<gmd:URL>http://www.sistemapiemonte.it/serviziositad/</gmd:URL>
+</gmd:linkage>
+</gmd:CI_OnlineResource>
+</gmd:onlineResource>
+</gmd:CI_Contact>
+</gmd:contactInfo>
+<gmd:role>
+<gmd:CI_RoleCode codeListValue="owner"
+codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_RoleCode">proprietario</gmd:CI_RoleCode>
+</gmd:role>
+</gmd:CI_ResponsibleParty>
+</gmd:citedResponsibleParty>
 
-&lt;gmd:citedResponsibleParty&gt;
+<...></...>
 
-&lt;gmd:CI\_ResponsibleParty&gt;
+</gmd:CI_Citation>
+</gmd:citation>
+</gmd:MD_DataIdentification>
+</gmd:identificationInfo>
 
-&lt;gmd:organisationName&gt;
+<...></...>
 
-&lt;gco:CharacterString&gt;Regione Piemonte – Settore cartografia e
-sistema informativo territoriale&lt;/gco:CharacterString&gt;
+</gmd:MD_Metadata>
 
-&lt;/gmd:organisationName&gt;
-
-&lt;gmd:contactInfo&gt;
-
-&lt;gmd:CI\_Contact&gt;
-
-&lt;gmd:address&gt;
-
-&lt;gmd:CI\_Address&gt;
-
-&lt;gmd:electronicMailAddress&gt;
-
-&lt;gco:CharacterString&gt;sitad@csi.it&lt;/gco:CharacterString&gt;
-
-&lt;/gmd:electronicMailAddress&gt;
-
-&lt;/gmd:CI\_Address&gt;
-
-&lt;/gmd:address&gt;
-
-&lt;gmd:onlineResource&gt;
-
-&lt;gmd:CI\_OnlineResource&gt;
-
-&lt;gmd:linkage&gt;
-
-&lt;gmd:URL&gt;http://www.sistemapiemonte.it/serviziositad/&lt;/gmd:URL&gt;
-
-&lt;/gmd:linkage&gt;
-
-&lt;/gmd:CI\_OnlineResource&gt;
-
-&lt;/gmd:onlineResource&gt;
-
-&lt;/gmd:CI\_Contact&gt;
-
-&lt;/gmd:contactInfo&gt;
-
-&lt;gmd:role&gt;
-
-&lt;gmd:CI\_RoleCode codeListValue="owner"
-codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO\_19139\_Schemas/resources/codelist/gmxCodelists.xml\#CI\_RoleCode"&gt;proprietario&lt;/gmd:CI\_RoleCode&gt;
-
-&lt;/gmd:role&gt;
-
-&lt;/gmd:CI\_ResponsibleParty&gt;
-
-&lt;/gmd:citedResponsibleParty&gt;
-
-**…**
-
-&lt;/gmd:CI\_Citation&gt;
-
-&lt;/gmd:citation&gt;
-
-&lt;/gmd:MD\_DataIdentification&gt;
-
-&lt;/gmd:identificationInfo&gt;
-
-**…**
-
-&lt;/gmd:MD\_Metadata&gt;
+```
 
 #### Identificatore
 
-  **Nome elemento**                   **Identificatore**
-  ----------------------------------- -----------------------------------------------------------------------------------
-  **Riferimento**                     All.2 DM – tab. I-14
-  **Molteplicità**                    \[1\]
-  **Elemento INSPIRE**                Identificatore univoco della risorsa
-  **Definizione**                     Riferimento univoco che identifica la risorsa nel livello gerarchico specificato.
-  **Istruzioni di implementazione**   Testo libero.
 
-**Requisito 19** L'elemento deve contenere, come prefisso, il **codice
+<table>
+<tr>
+<td>Riferimento</td>
+<td>All.2 Decreto RNDT – tab. I-14</td>
+</tr>
+<tr>
+<td>Molteplicità</td>
+<td>\[1\]</td>
+</tr>
+<tr>
+<td>Elemento INSPIRE</td>
+<td>Identificatore univoco della risorsa</td>
+</tr>
+<tr>
+<td>Definizione</td>
+<td>Riferimento univoco che identifica la risorsa nel livello gerarchico specificato.</td>
+</tr>
+<tr>
+<td>Istruzioni di implementazione</td>
+<td>Testo libero.</td>
+</tr>
+</table>
+
+
+>**REQUISITO 19** 
+
+```
+L'elemento deve contenere, come prefisso, il **codice
 iPA** assegnato all’Amministrazione nel momento dell’accreditamento
 all'Indice delle Pubbliche Amministrazioni come da comma 1 dell’art. 19
 dell’allegato A del DPCM 1 aprile 2008. La condizione imprescindibile è
 che l’identificativo debba essere univoco. Il separatore tra il codice
 iPA e la restante parte dell’identificatore è “**:**” (due punti).
 
-**Requisito 20** La proprietà obbligatoria per l'identificatore è
+```
+
+>**REQUISITO 20** 
+
+```
+La proprietà obbligatoria per l'identificatore è
 "*code*" (v. B.2.7.3 di ISO 19115).
 
-**Requisito 21** Se viene fornito anche un valore per l'elemento
+```
+
+>**REQUISITO 21** 
+
+```
+Se viene fornito anche un valore per l'elemento
 "*codeSpace*" (non richiesto da RNDT), allora il tipo di dato per
 l'identificatore deve essere *RS\_Identifier* anzichè *MD\_Identifier*.
 
-**Raccomandazione 11** Il formato consigliato è il seguente:
+```
+
+>**_Raccomandazione 11_** 
+
+```
+Il formato consigliato è il seguente:
 ***iPA**:cod-Ente* dove: *iPA* è il codice IPA e *cod-Ente* è un codice
 interno a discrezione dell’Amministrazione che può essere anche un UUID.
 
-**Esempio di XML:**
+```
 
-&lt;gmd:MD\_Metadata&gt;
+>**Esempio di XML:**
 
-**…**
 
-&lt;gmd:identificationInfo&gt;
+```xml
 
-&lt;gmd:MD\_DataIdentification&gt;
+<gmd:MD_Metadata>
 
-&lt;gmd:citation&gt;
+<...></...>
 
-&lt;gmd:CI\_Citation&gt;
+<gmd:identificationInfo>
+<gmd:MD_DataIdentification>
+<gmd:citation>
+<gmd:CI_Citation>
 
-**…**
+<...></...>
 
-&lt;gmd:identifier&gt;
+<gmd:identifier>
+<gmd:MD_Identifier>
+<gmd:code>
+<gco:CharacterString>r_piemon:00000001</gco:CharacterString>
+</gmd:code>
+</gmd:MD_Identifier>
+</gmd:identifier>
 
-&lt;gmd: MD\_Identifier&gt;
+<...></...>
 
-&lt;gmd:code&gt;
+</gmd:CI_Citation>
+</gmd:citation>
+</gmd:MD_DataIdentification>
+</gmd:identificationInfo>
 
-&lt;gco:CharacterString&gt;r\_piemon:00000001&lt;/gco:CharacterString&gt;
+<...></...>
 
-&lt;/gmd:code&gt;
+</gmd:MD_Metadata>
 
-&lt;/gmd:MD\_Identifier&gt;
-
-&lt;/gmd:identifier&gt;
-
-**…**
-
-&lt;/gmd:CI\_Citation&gt;
-
-&lt;/gmd:citation&gt;
-
-&lt;/gmd:MD\_DataIdentification&gt;
-
-&lt;/gmd:identificationInfo&gt;
-
-**…**
-
-&lt;/gmd:MD\_Metadata&gt;
+```
 
 #### ID livello superiore
 
-  **Nome elemento**                   **ID livello superiore**
-  ----------------------------------- ----------------------------------------------------------------------------------
-  **Riferimento**                     All.2 DM – tab. I-15
-  **Molteplicità**                    \[1\]
-  **Elemento INSPIRE**                Nessun elemento corrispondente
-  **Definizione**                     Riferimento univoco relativo alla serie di cui il dataset è parte.
-  **Istruzioni di implementazione**   Testo libero. Per quanto riguarda il formato, vale quanto indicato al § 2.1.2.5.
+<table>
+<tr>
+<td>Riferimento</td>
+<td>All.2 Decreto RNDT – tab. I-15</td>
+</tr>
+<tr>
+<td>Molteplicità</td>
+<td>\[1\]</td>
+</tr>
+<tr>
+<td>Elemento INSPIRE</td>
+<td>Nessun elemento corrispondente</td>
+</tr>
+<tr>
+<td>Definizione</td>
+<td>Riferimento univoco relativo alla serie di cui il dataset è parte.</td>
+</tr>
+<tr>
+<td>Istruzioni di implementazione</td>
+<td>Testo libero. Per quanto riguarda il formato, vale quanto indicato al § 2.1.2.5.</td>
+</tr>
+</table>
 
-**Requisito 22** L’elemento è utile per gestire le relazioni tra i
+
+>**REQUISITO 22** 
+
+```
+L’elemento è utile per gestire le relazioni tra i
 livelli gerarchici. Esso deve assumere il valore dell'elemento
 “*Identificatore*” (§ 2.1.2.5) del livello padre a cui è relazionato.
 Nel caso non esista un livello gerarchico di rango superiore (per es.
@@ -1676,61 +1720,74 @@ serie o dataset “flat”, cioè che non appartiene a nessuna serie),
 l’elemento deve assumere comunque il valore dell’elemento
 “*Identificatore*” del livello corrente.
 
-**Esempio di XML:**
+```
 
-&lt;gmd:MD\_Metadata&gt;
+>**Esempio di XML:**
 
-**…**
+```xml
 
-&lt;gmd:identificationInfo&gt;
+<gmd:MD_Metadata>
 
-&lt;gmd:MD\_DataIdentification&gt;
+<...></...>
 
-&lt;gmd:citation&gt;
+<gmd:identificationInfo>
+<gmd:MD_DataIdentification>
+<gmd:citation>
+<gmd:CI_Citation>
 
-&lt;gmd:CI\_Citation&gt;
+<...></...>
 
-**…**
+<gmd:series>
+<gmd:CI_Series>
+<gmd:issueIdentification>
+<gco:CharacterString>r_piemon:00000001</gco:CharacterString>
+</gmd:issueIdentification>
+</gmd:CI_Series>
+</gmd:series>
 
-&lt;gmd:series&gt;
+<...></...>
 
-&lt;gmd:CI\_Series&gt;
+</gmd:CI_Citation>
+</gmd:citation>
+</gmd:MD_DataIdentification>
+</gmd:identificationInfo>
 
-&lt;gmd:issueIdentification&gt;
+<...></...>
 
-&lt;gco:CharacterString&gt;r\_piemon:00000001&lt;/gco:CharacterString&gt;
+</gmd:MD_Metadata>
 
-&lt;/gmd:issueIdentification&gt;
-
-&lt;/gmd:CI\_Series&gt;
-
-&lt;/gmd:series&gt;
-
-**…**
-
-&lt;/gmd:CI\_Citation&gt;
-
-&lt;/gmd:citation&gt;
-
-&lt;/gmd:MD\_DataIdentification&gt;
-
-&lt;/gmd:identificationInfo&gt;
-
-**…**
-
-&lt;/gmd:MD\_Metadata&gt;
+```
 
 #### Altri dettagli
 
-  **Nome elemento**                   **Altri dettagli**
-  ----------------------------------- --------------------------------------
-  **Riferimento**                     All.2 DM – tab. I-16
-  **Molteplicità**                    \[0..1\]
-  **Elemento INSPIRE**                Nessun elemento corrispondente
-  **Definizione**                     Ulteriori informazioni di citazione.
-  **Istruzioni di implementazione**   Testo libero.
+<table>
+<tr>
+<td>Riferimento</td>
+<td>All.2 Decreto RNDT – tab. I-16</td>
+</tr>
+<tr>
+<td>Molteplicità</td>
+<td>\[0..1\]</td>
+</tr>
+<tr>
+<td>Elemento INSPIRE</td>
+<td>Nessun elemento corrispondente</td>
+</tr>
+<tr>
+<td>Definizione</td>
+<td>Ulteriori informazioni di citazione.</td>
+</tr>
+<tr>
+<td>Istruzioni di implementazione</td>
+<td>Testo libero.</td>
+</tr>
+</table>
 
-**Raccomandazione 12** Si consiglia di utilizzare questo elemento per
+
+>**_Raccomandazione 12_** 
+
+```
+Si consiglia di utilizzare questo elemento per
 indicare, se disponibile, il riferimento, attraverso un URL, alle norme
 (legge nazionale o regionale, delibera, atto amministrativo, …) relative
 alla produzione e/o trattamento dei dati. L’elemento può essere
@@ -1739,91 +1796,117 @@ per specificare il riferimento a documenti specifici, diversi dalle
 norme, da cui si possono ottenere ulteriori informazioni sulle
 caratteristiche tecniche del dato.
 
+```
+
 **Esempio di XML:**
 
-&lt;gmd:MD\_Metadata&gt;
+```xml
 
-**…**
+<gmd:MD_Metadata>
 
-&lt;gmd:identificationInfo&gt;
+<...></...>
 
-&lt;gmd:MD\_DataIdentification&gt;
+<gmd:identificationInfo>
+<gmd:MD_DataIdentification>
+<gmd:citation>
+<gmd:CI_Citation>
 
-&lt;gmd:citation&gt;
+<...></...>
 
-&lt;gmd:CI\_Citation&gt;
+<gmd:otherCitationDetails>
+<gco:CharacterString>http://www.regione.emilia-romagna.it/temi/territorio/cartografia-regionale/vedi-anche/database-topografico-regionale/le-norme-e-gli-atti-in-vigore/atto-di-indirizzo-e-coordinamento-tecnico-per/at\_download/file</gco:CharacterString>
+</gmd:otherCitationDetails>
 
-**…**
+<...></...>
 
-&lt;gmd:otherCitationDetails&gt;
-&lt;gco:CharacterString&gt;[*http://www.regione.emilia-romagna.it/temi/territorio/cartografia-regionale/vedi-anche/database-topografico-regionale/le-norme-e-gli-atti-in-vigore/atto-di-indirizzo-e-coordinamento-tecnico-per/at\_download/file*](http://www.regione.emilia-romagna.it/temi/territorio/cartografia-regionale/vedi-anche/database-topografico-regionale/le-norme-e-gli-atti-in-vigore/atto-di-indirizzo-e-coordinamento-tecnico-per/at_download/file)&lt;/gco:CharacterString&gt;
+</gmd:CI_Citation>
+</gmd:citation>
+</gmd:MD_DataIdentification>
+</gmd:identificationInfo>
 
-&lt;/gmd:otherCitationDetails&gt;
+<...></...>
 
-**…**
+</gmd:MD_Metadata>
 
-&lt;/gmd:CI\_Citation&gt;
-
-&lt;/gmd:citation&gt;
-
-&lt;/gmd:MD\_DataIdentification&gt;
-
-&lt;/gmd:identificationInfo&gt;
-
-**…**
-
-&lt;/gmd:MD\_Metadata&gt;
+```
 
 #### Descrizione
 
-  **Nome elemento**                   **Descrizione**
-  ----------------------------------- ---------------------------------------------------------
-  **Riferimento**                     All.2 DM – tab. I-17
-  **Molteplicità**                    \[1\]
-  **Elemento INSPIRE**                Breve descrizione della risorsa
-  **Definizione**                     Breve testo di descrizione del contenuto della risorsa.
-  **Istruzioni di implementazione**   Testo libero.
 
-**Raccomandazione 13** La descrizione può includere:
+<table>
+<tr>
+<td>Riferimento</td>
+<td>All.2 Decreto RNDT – tab. I-17</td>
+</tr>
+<tr>
+<td>Molteplicità</td>
+<td>\[1\]</td>
+</tr>
+<tr>
+<td>Elemento INSPIRE</td>
+<td>Breve descrizione della risorsa</td>
+</tr>
+<tr>
+<td>Definizione</td>
+<td>Breve testo di descrizione del contenuto della risorsa.</td>
+</tr>
+<tr>
+<td>Istruzioni di implementazione</td>
+<td>Testo libero.</td>
+</tr>
+</table>
+
+
+>**_Raccomandazione 13_** 
+
+
+```
+La descrizione può includere:
 
 - un breve riassunto con i dettagli più importanti sui dati documentati;
-
 - la copertura dei dati, ovvero la trascrizione linguistica
 dell'estensione o localizzazione geografica in aggiunta al riquadro di
 delimitazione (bounding box);
-
 - i principali attributi dei dati;
-
 - le fonti dei dati;
-
 - i riferimenti normativi (che possono essere meglio dettagliati
 attraverso l'elemento "*Altri dettagli*" - v. § 2.1.2.7);
-
 - l'importanza della risorsa.
 
-**Raccomandazione 14** Non utilizzare acronimi di cui non si fornisce
+```
+
+>**_Raccomandazione 14_** 
+
+```
+Non utilizzare acronimi di cui non si fornisce
 una spiegazione.
 
-**Raccomandazione 15** Riassumere i dettagli più importanti nei primi
+```
+
+>**_Raccomandazione 15_** 
+
+```
+Riassumere i dettagli più importanti nei primi
 periodi o nei primi 100 caratteri.
 
-**Esempio di XML:**
+```
 
-**…**
+>**Esempio di XML:**
 
-&lt;gmd:MD\_Metadata&gt;
 
-**…**
+```xml
 
-&lt;gmd:identificationInfo&gt;
+<gmd:MD_Metadata>
 
-&lt;gmd:MD\_DataIdentification&gt;
+<...></...>
 
-**…**
+<gmd:identificationInfo>
+<gmd:MD_DataIdentification>
 
-&lt;gmd:abstract&gt;
+<...></...>
 
-&lt;gco:CharacterString&gt;Dataset dei siti italiani iscritti nella
+<gmd:abstract>
+<gco:CharacterString>Dataset dei siti italiani iscritti nella
 Lista del Patrimonio Mondiale UNESCO identificati dalle relative
 perimetrazioni (area iscritta e zona tampone), approvate dal Comitato
 del Patrimonio Mondiale UNESCO. I siti, in alcuni casi, sono di tipo
@@ -1842,49 +1925,63 @@ scala della cartografia utilizzata per la perimetrazione del sito o area
 di rispetto; TIPOLOGIA: sito culturale, monumento, complesso
 monumentale, sito, sito naturale, formazione fisica e biologica,
 formazione geologica, habitat minacciato, sito di eccezionale bellezza,
-interesse scientifico, sito misto&lt;/gco:CharacterString&gt;
+interesse scientifico, sito misto</gco:CharacterString>
+</gmd:abstract>
 
-&lt;/gmd:abstract&gt;
+<...></...>
 
-**…**
+</gmd:MD_DataIdentification>
+</gmd:identificationInfo>
 
-&lt;/gmd:MD\_DataIdentification&gt;
+<...></...>
 
-&lt;/gmd:identificationInfo&gt;
+</gmd:MD_Metadata>
 
-**…**
-
-&lt;/gmd:MD\_Metadata&gt;
+```
 
 #### Parole chiave
 
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **Nome elemento**                   **Parole chiave**
-  ----------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------
-  **Riferimento**                     All.2 DM – tab. I-18 (I-18.1, I-18.2)
 
-  **Molteplicità**                    \[1..\*\]
+<table>
+<tr>
+<td>Riferimento</td>
+<td>All.2 Decreto RNDT – tab. I-18 (I-18.1, I-18.2)</td>
+</tr>
+<tr>
+<td>Molteplicità</td>
+<td>\[1..\*\]</td>
+</tr>
+<tr>
+<td>Elemento INSPIRE</td>
+<td>Parola chiave (Valore della parola chiave – Vocabolario controllato di origine)</td>
+</tr>
+<tr>
+<td>Definizione</td>
+<td>Parola formalizzata o utilizzata comunemente per descrivere la risorsa.</td>
+</tr>
+<tr>
+<td>Istruzioni di implementazione</td>
+<td> - Parola chiave \[1..\*\] - Testo libero
+     - Thesaurus \[0..1\] :
+       - Titolo \[1\]– Testo libero;
+       - Data \[1..\*\] – utilizzare il formato previsto dallo Standard ISO 8601: *aaaa-mm-gg* oppure *aaaammgg*;
+       - Tipo data \[1..\*\] **-** L’elemento deve assumere uno dei valori della lista “*CI\_DateTypeCode*” (§ 3.4.3.1 - all. 2 DM).</td>
+</tr>
+</table>
 
-  **Elemento INSPIRE**                Parola chiave (Valore della parola chiave – Vocabolario controllato di origine)
 
-  **Definizione**                     Parola formalizzata o utilizzata comunemente per descrivere la risorsa.
+>**REQUISITO 23** 
 
-  **Istruzioni di implementazione**   -   **Parola chiave** \[1..\*\] - Testo libero
-                                      
-                                      -   **Thesaurus** \[0..1\] :
-                                      
-                                          -   **Titolo** \[1\]– Testo libero;
-                                      
-                                          -   **Data** \[1..\*\] – utilizzare il formato previsto dallo Standard ISO 8601: *aaaa-mm-gg* oppure *aaaammgg*;
-                                      
-                                          -   **Tipo data** \[1..\*\] **-** L’elemento deve assumere uno dei valori della lista “*CI\_DateTypeCode*” (§ 3.4.3.1 - all. 2 DM).
-                                      
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-**Requisito 23** Il DM 10/11/2011 e il Regolamento 1205/2008/CE
+```
+Il DM 10/11/2011 e il Regolamento 1205/2008/CE
 prescrivono la presenza di **almeno una parola chiave**.
 
-**Requisito 24 Se viene utilizzata una sola parola chiave**, allora
+```
+
+>**REQUISITO 24** 
+
+```
+Se viene utilizzata una sola parola chiave, allora
 essa:
 
 - deve descrivere la categoria tematica INSPIRE corrispondente, come
@@ -1892,7 +1989,12 @@ definita negli allegati I, II e III della Direttiva;
 
 - deve essere espressa in italiano per i 34 temi INSPIRE.
 
-**Requisito 25** Nel caso delle parole chiave relative ai temi INSPIRE,
+```
+
+>**REQUISITO 25** 
+
+```
+Nel caso delle parole chiave relative ai temi INSPIRE,
 è obbligatorio citare le informazioni relative al thesaurus *GEMET –
 INSPIRE Themes* che sono le seguenti:
 
@@ -1919,12 +2021,22 @@ In aggiunta al thesaurus citato, possono essere inserite altre parole
 chiave, che possono essere descritte sia tramite un testo libero che
 essere derivate da un Vocabolario Controllato.
 
-**Requisito 26 Se vengono utilizzate più parole chiave** e queste sono
+```
+
+>**REQUISITO 26**
+
+```
+Se vengono utilizzate più parole chiave e queste sono
 tratte da Vocabolari controllati (thesauri, ontologie), per esempio
 **GEMET - Concepts**, **EUROVOC** o **AGROVOC**, allora deve essere
 fornita anche la citazione del Vocabolario controllato di origine.
 
-**Requisito 27** Nel caso le parole chiave siano tratte dal thesaurus
+```
+
+>**REQUISITO 27** 
+
+```
+Nel caso le parole chiave siano tratte dal thesaurus
 GEMET[^6], allora le informazioni da citare devono essere le seguenti:
 
 **Titolo** = “*GEMET – Concepts, version 2.4*”
@@ -1936,255 +2048,239 @@ GEMET[^6], allora le informazioni da citare devono essere le seguenti:
 Nel tracciato XML che segue sono riportati alcuni esempi su come
 riportare parole chiave tratte dai thesauri GEMET - Concepts e AGROVOC.
 
-**Requisito 28** La citazione del thesaurus deve includere almeno il
+```
+
+>**REQUISITO 28** 
+
+```
+La citazione del thesaurus deve includere almeno il
 **titolo**, la **data** e il **tipo di data** (tra creazione,
 pubblicazione o revisione) del vocabolario controllato da cui sono
 tratte le parole chiave.
 
-**Requisito 29** Per poter essere coerenti con lo Standard ISO 19115,
+```
+
+>**REQUISITO 29** 
+
+```
+Per poter essere coerenti con lo Standard ISO 19115,
 tutte le parole chiave tratte dalla stessa versione dello stesso
 vocabolario controllato devono essere raggruppate nella stessa istanza
 della proprietà "*descriptiveKeywords*" di ISO 19115.
 
-**Raccomandazione 16** è preferibile scegliere parole chiave da
+```
+
+>**_Raccomandazione 16_** 
+
+```
+è preferibile scegliere parole chiave da
 collezioni di termini collegati e predefiniti (vocabolari controllati).
 
-**Raccomandazione 17** Si consiglia di inserire almeno due parole chiave
+```
+
+>**_Raccomandazione 17_** 
+
+```
+Si consiglia di inserire almeno due parole chiave
 in aggiunta a quella (obbligatoria) tratta da *GEMET - INSPIRE themes*.
 
-**Raccomandazione 18** Sarebbe auspicabile includere sia un codice (un
+```
+
+>**_Raccomandazione 18_** 
+
+```
+Sarebbe auspicabile includere sia un codice (un
 valore in linguaggio neutrale) che un'etichetta "human-readable" (in
 italiano).
 
-**Raccomandazione 19** è importante specificare la versione del
+```
+
+>**_Raccomandazione 19_** 
+
+```
+è importante specificare la versione del
 thesaurus usato per le parole chiave.
 
-**Esempio di XML:**
+```
+
+>**Esempio di XML:**
+
+
+```xml
+
+<gmd:MD_Metadata>
+
+<...></...>
+
+<gmd:identificationInfo>
+<gmd:MD_DataIdentification>
+
+<...></...>
+
+<gmd:descriptiveKeywords>
+<gmd:MD_Keywords>
+<gmd:keyword>
+<gco:CharacterString>Orto immagini</gco:CharacterString>
+</gmd:keyword>
+<gmd:thesaurusName>
+<gmd:CI_Citation>
+<gmd:title>
+<gco:CharacterString>GEMET - INSPIRE themes, version
+1.0</gco:CharacterString>
+</gmd:title>
+<gmd:date>
+<gmd:CI_Date>
+<gmd:date>
+<gco:Date>2008-06-01</gco:Date>
+</gmd:date>
+<gmd:dateType>
+<gmd:CI_DateTypeCode codeListValue="publication"
+codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_DateTypeCode">pubblicazione</gmd:CI_DateTypeCode>
+</gmd:dateType>
+</gmd:CI_Date>
+</gmd:date>
+</gmd:CI_Citation>
+</gmd:thesaurusName>
+</gmd:MD_Keywords>
+</gmd:descriptiveKeywords>
+<gmd:descriptiveKeywords>
+<gmd:MD_Keywords>
+<gmd:keyword>
+<gco:CharacterString>ambiente naturale</gco:CharacterString>
+</gmd:keyword>
+<gmd:thesaurusName>
+<gmd:CI_Citation>
+<gmd:title>
+<gco:CharacterString>GEMET – Concepts, version
+2.4</gco:CharacterString>
+</gmd:title>
+<gmd:date>
+<gmd:CI_Date>
+<gmd:date>
+<gco:Date>2010-01-13</gco:Date>
+</gmd:date>
+<gmd:dateType>
+<gmd:CI_DateTypeCode codeListValue="publication"
+codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_DateTypeCode">pubblicazione</gmd:CI_DateTypeCode>
+</gmd:dateType>
+</gmd:CI_Date>
+</gmd:date>
+</gmd:CI_Citation>
+</gmd:thesaurusName>
+</gmd:MD_Keywords>
+</gmd:descriptiveKeywords>
+<gmd:descriptiveKeywords>
+<gmd:MD_Keywords>
+<gmd:keyword>
+<gco:CharacterString>risorse naturali</gco:CharacterString>
+</gmd:keyword>
+<gmd:thesaurusName>
+<gmd:CI_Citation>
+<gmd:title>
+<gco:CharacterString>AGROVOC</gco:CharacterString>
+</gmd:title>
+<gmd:date>
+<gmd:CI_Date>
+<gmd:date>
+<gco:Date>2008-04-14</gco:Date>
+</gmd:date>
+<gmd:dateType>
+<gmd:CI_DateTypeCode codeListValue="publication"
+codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_DateTypeCode">pubblicazione</gmd:CI_DateTypeCode>
+</gmd:dateType>
+</gmd:CI_Date>
+</gmd:date>
+</gmd:CI_Citation>
+</gmd:thesaurusName>
+</gmd:MD_Keywords>
+</gmd:descriptiveKeywords>
+<gmd:descriptiveKeywords>
+<gmd:MD_Keywords>
+<gmd:keyword>
+<gco:CharacterString>raster</gco:CharacterString>
+</gmd:keyword>
+</gmd:MD_Keywords>
+</gmd:descriptiveKeywords>
+
+<...></...>
 
-&lt;gmd:MD\_Metadata&gt;
+</gmd:MD_DataIdentification>
+</gmd:identificationInfo>
 
-**…**
+<...></...>
 
-&lt;gmd:identificationInfo&gt;
+</gmd:MD_Metadata>
 
-&lt;gmd:MD\_DataIdentification&gt;
-
-**…**
-
-&lt;gmd:descriptiveKeywords&gt;
-
-&lt;gmd:MD\_Keywords&gt;
-
-&lt;gmd:keyword&gt;
-
-&lt;gco:CharacterString&gt;Orto immagini&lt;/gco:CharacterString&gt;
-
-&lt;/gmd:keyword&gt;
-
-&lt;gmd:thesaurusName&gt;
-
-&lt;gmd:CI\_Citation&gt;
-
-&lt;gmd:title&gt;
-
-&lt;gco:CharacterString&gt;GEMET - INSPIRE themes, version
-1.0&lt;/gco:CharacterString&gt;
-
-&lt;/gmd:title&gt;
-
-&lt;gmd:date&gt;
-
-&lt;gmd:CI\_Date&gt;
-
-&lt;gmd:date&gt;
-
-&lt;gco:Date&gt;2008-06-01&lt;/gco:Date&gt;
-
-&lt;/gmd:date&gt;
-
-&lt;gmd:dateType&gt;
-
-&lt;gmd:CI\_DateTypeCode codeListValue="publication"
-codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO\_19139\_Schemas/resources/codelist/gmxCodelists.xml\#CI\_DateTypeCode"&gt;pubblicazione&lt;/gmd:CI\_DateTypeCode&gt;
-
-&lt;/gmd:dateType&gt;
-
-&lt;/gmd:CI\_Date&gt;
-
-&lt;/gmd:date&gt;
-
-&lt;/gmd:CI\_Citation&gt;
-
-&lt;/gmd:thesaurusName&gt;
-
-&lt;/gmd:MD\_Keywords&gt;
-
-&lt;/gmd:descriptiveKeywords&gt;
-
-&lt;gmd:descriptiveKeywords&gt;
-
-&lt;gmd:MD\_Keywords&gt;
-
-&lt;gmd:keyword&gt;
-
-&lt;gco:CharacterString&gt;ambiente naturale&lt;/gco:CharacterString&gt;
-
-&lt;/gmd:keyword&gt;
-
-&lt;gmd:thesaurusName&gt;
-
-&lt;gmd:CI\_Citation&gt;
-
-&lt;gmd:title&gt;
-
-&lt;gco:CharacterString&gt;GEMET – Concepts, version
-2.4&lt;/gco:CharacterString&gt;
-
-&lt;/gmd:title&gt;
-
-&lt;gmd:date&gt;
-
-&lt;gmd:CI\_Date&gt;
-
-&lt;gmd:date&gt;
-
-&lt;gco:Date&gt;2010-01-13&lt;/gco:Date&gt;
-
-&lt;/gmd:date&gt;
-
-&lt;gmd:dateType&gt;
-
-&lt;gmd:CI\_DateTypeCode codeListValue="publication"
-codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO\_19139\_Schemas/resources/codelist/gmxCodelists.xml\#CI\_DateTypeCode"&gt;pubblicazione&lt;/gmd:CI\_DateTypeCode&gt;
-
-&lt;/gmd:dateType&gt;
-
-&lt;/gmd:CI\_Date&gt;
-
-&lt;/gmd:date&gt;
-
-&lt;/gmd:CI\_Citation&gt;
-
-&lt;/gmd:thesaurusName&gt;
-
-&lt;/gmd:MD\_Keywords&gt;
-
-&lt;/gmd:descriptiveKeywords&gt;
-
-&lt;gmd:descriptiveKeywords&gt;
-
-&lt;gmd:MD\_Keywords&gt;
-
-&lt;gmd:keyword&gt;
-
-&lt;gco:CharacterString&gt;risorse naturali&lt;/gco:CharacterString&gt;
-
-&lt;/gmd:keyword&gt;
-
-&lt;gmd:thesaurusName&gt;
-
-&lt;gmd:CI\_Citation&gt;
-
-&lt;gmd:title&gt;
-
-&lt;gco:CharacterString&gt;AGROVOC&lt;/gco:CharacterString&gt;
-
-&lt;/gmd:title&gt;
-
-&lt;gmd:date&gt;
-
-&lt;gmd:CI\_Date&gt;
-
-&lt;gmd:date&gt;
-
-&lt;gco:Date&gt;2008-04-14&lt;/gco:Date&gt;
-
-&lt;/gmd:date&gt;
-
-&lt;gmd:dateType&gt;
-
-&lt;gmd:CI\_DateTypeCode codeListValue="publication"
-codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO\_19139\_Schemas/resources/codelist/gmxCodelists.xml\#CI\_DateTypeCode"&gt;pubblicazione&lt;/gmd:CI\_DateTypeCode&gt;
-
-&lt;/gmd:dateType&gt;
-
-&lt;/gmd:CI\_Date&gt;
-
-&lt;/gmd:date&gt;
-
-&lt;/gmd:CI\_Citation&gt;
-
-&lt;/gmd:thesaurusName&gt;
-
-&lt;/gmd:MD\_Keywords&gt;
-
-&lt;/gmd:descriptiveKeywords&gt;
-
-&lt;gmd:descriptiveKeywords&gt;
-
-&lt;gmd:MD\_Keywords&gt;
-
-&lt;gmd:keyword&gt;
-
-&lt;gco:CharacterString&gt;raster&lt;/gco:CharacterString&gt;
-
-&lt;/gmd:keyword&gt;
-
-&lt;/gmd:MD\_Keywords&gt;
-
-&lt;/gmd:descriptiveKeywords&gt;
-
-**…**
-
-&lt;/gmd:MD\_DataIdentification&gt;
-
-&lt;/gmd:identificationInfo&gt;
-
-**…**
-
-&lt;/gmd:MD\_Metadata&gt;
+```
 
 #### Punto di contatto
 
-  --------------------------------------------------------------------------------------------------------------------------------------------------------
-  **Nome elemento**                   **Punto di contatto**
-  ----------------------------------- --------------------------------------------------------------------------------------------------------------------
-  **Riferimento**                     All.2 DM – tab. I-19 (I-19.1, I-19.2, I-19.3, I-19.4)
+<table>
+<tr>
+<td>Riferimento</td>
+<td>All.2 Decreto RNDT – tab. I-19 (I-19.1, I-19.2, I-19.3, I-19.4)</td>
+</tr>
+<tr>
+<td>Molteplicità</td>
+<td>\[1..\*\]</td>
+</tr>
+<tr>
+<td>Elemento INSPIRE</td>
+<td>Parte responsabile – Ruolo della parte responsabile</td>
+</tr>
+<tr>
+<td>Definizione</td>
+<td>Organizzazione che è possibile contattare per avere informazioni sulla risorsa.</td>
+</tr>
+<tr>
+<td>Istruzioni di implementazione</td>
+<td> - Nome dell’Ente \[1\] - Testo libero
+     - Ruolo \[1\] – L’elemento deve assumere uno dei valori della lista “*CI\_RoleCode*” (§3.4.3.3 - all. 2 DM).
+     - Sito web \[0..1\] - formato URL. Specificare obbligatoriamente anche il protocollo (es. *http*).
+     - Telefono \[0..1\] - Testo libero.
+     - E-mail \[1..\*\] - Testo libero.</td>
+</tr>
+</table>
 
-  **Molteplicità**                    \[1..\*\]
 
-  **Elemento INSPIRE**                Parte responsabile – Ruolo della parte responsabile
+**Requisito 30** 
 
-  **Definizione**                     Organizzazione che è possibile contattare per avere informazioni sulla risorsa.
-
-  **Istruzioni di implementazione**   -   **Nome dell’Ente** \[1\] - Testo libero
-                                      
-                                      -   **Ruolo** \[1\] – L’elemento deve assumere uno dei valori della lista “*CI\_RoleCode*” (§3.4.3.3 - all. 2 DM).
-                                      
-                                      -   **Sito web** \[0..1\] - formato URL. Specificare obbligatoriamente anche il protocollo (es. *http*).
-                                      
-                                      -   **Telefono** \[0..1\] - Testo libero.
-                                      
-                                      -   **E-mail** \[1..\*\] - Testo libero.
-                                      
-  --------------------------------------------------------------------------------------------------------------------------------------------------------
-
-**Requisito 30** Devono essere forniti i seguenti elementi: **nome
+```
+Devono essere forniti i seguenti elementi: **nome
 dell'Ente**, **ruolo**, **indirizzo e-mail**, **sito web** e/o
 **riferimento telefonico**.
 
-**Requisito 31** Come indicato all'allegato 2 del DM, deve essere
+```
+
+**Requisito 31** 
+
+```
+Come indicato all'allegato 2 del DM, deve essere
 documentato almeno uno dei due metadati tra "Sito web" e "Telefono".
 
-**Raccomandazione 20** Il nome dell'Ente dovrebbe essere riportato per
+```
+
+**Raccomandazione 20** 
+
+```
+Il nome dell'Ente dovrebbe essere riportato per
 intero, senza abbreviazioni. Si consiglia di indicare indirizzi e-mail
 istituzionali e non personali.
 
-**Raccomandazione 21** Scegliere il ruolo che meglio rappresenta la
+```
+
+**Raccomandazione 21** 
+
+```
+Scegliere il ruolo che meglio rappresenta la
 funzione espletata dall'Ente.
+
+```
 
 **Esempio di XML:**
 
+
+```xml
 &lt;gmd:MD\_Metadata&gt;
 
 **…**
@@ -2263,6 +2359,8 @@ di contatto&lt;/gmd:CI\_RoleCode&gt;
 **…**
 
 &lt;/gmd:MD\_Metadata&gt;
+
+```
 
 #### Set di caratteri
 

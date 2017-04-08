@@ -2281,84 +2281,54 @@ funzione espletata dall'Ente.
 
 
 ```xml
-&lt;gmd:MD\_Metadata&gt;
+<gmd:MD_Metadata>
 
-**…**
+<...></...>
 
-&lt;gmd:identificationInfo&gt;
+<gmd:identificationInfo>
+<gmd:MD_DataIdentification>
 
-&lt;gmd:MD\_DataIdentification&gt;
+<...></...>
 
-**…**
+<gmd:pointOfContact>
+<gmd:CI_ResponsibleParty>
+<gmd:organisationName>
+<gco:CharacterString>Regione Piemonte – Settore cartografia e
+sistema informativo territoriale</gco:CharacterString>
+</gmd:organisationName>
+<gmd:contactInfo>
+<gmd:CI_Contact>
+<gmd:address>
+<gmd:CI_Address>
+<gmd:electronicMailAddress>
+<gco:CharacterString>sitad@csi.it</gco:CharacterString>
+</gmd:electronicMailAddress>
+</gmd:CI_Address>
+</gmd:address>
+<gmd:onlineResource>
+<gmd:CI_OnlineResource>
+<gmd:linkage>
+<gmd:URL>http://www.sistemapiemonte.it/serviziositad</gmd:URL>
+</gmd:linkage>
+</gmd:CI_OnlineResource>
+</gmd:onlineResource>
+</gmd:CI_Contact>
+</gmd:contactInfo>
+<gmd:role>
+<gmd:CI_RoleCode codeListValue="pointOfContact"
+codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_RoleCode">punto di contatto</gmd:CI_RoleCode>
+</gmd:role>
+</gmd:CI_ResponsibleParty>
+</gmd:pointOfContact>
 
-&lt;gmd:pointOfContact&gt;
+<...></...>
 
-&lt;gmd:CI\_ResponsibleParty&gt;
+</gmd:MD_DataIdentification>
+</gmd:identificationInfo>
 
-&lt;gmd:organisationName&gt;
+<...></...>
 
-&lt;gco:CharacterString&gt;Regione Piemonte – Settore cartografia e
-sistema informativo territoriale&lt;/gco:CharacterString&gt;
-
-&lt;/gmd:organisationName&gt;
-
-&lt;gmd:contactInfo&gt;
-
-&lt;gmd:CI\_Contact&gt;
-
-&lt;gmd:address&gt;
-
-&lt;gmd:CI\_Address&gt;
-
-&lt;gmd:electronicMailAddress&gt;
-
-&lt;gco:CharacterString&gt;sitad@csi.it&lt;/gco:CharacterString&gt;
-
-&lt;/gmd:electronicMailAddress&gt;
-
-&lt;/gmd:CI\_Address&gt;
-
-&lt;/gmd:address&gt;
-
-&lt;gmd:onlineResource&gt;
-
-&lt;gmd:CI\_OnlineResource&gt;
-
-&lt;gmd:linkage&gt;
-
-&lt;gmd:URL&gt;http://www.sistemapiemonte.it/serviziositad/&lt;/gmd:URL&gt;
-
-&lt;/gmd:linkage&gt;
-
-&lt;/gmd:CI\_OnlineResource&gt;
-
-&lt;/gmd:onlineResource&gt;
-
-&lt;/gmd:CI\_Contact&gt;
-
-&lt;/gmd:contactInfo&gt;
-
-&lt;gmd:role&gt;
-
-&lt;gmd:CI\_RoleCode codeListValue="pointOfContact"
-codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO\_19139\_Schemas/resources/codelist/gmxCodelists.xml\#CI\_RoleCode"&gt;punto
-di contatto&lt;/gmd:CI\_RoleCode&gt;
-
-&lt;/gmd:role&gt;
-
-&lt;/gmd:CI\_ResponsibleParty&gt;
-
-&lt;/gmd:pointOfContact&gt;
-
-**…**
-
-&lt;/gmd:MD\_DataIdentification&gt;
-
-&lt;/gmd:identificationInfo&gt;
-
-**…**
-
-&lt;/gmd:MD\_Metadata&gt;
+</gmd:MD_Metadata>
 
 ```
 
